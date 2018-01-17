@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Fh-sS-kbE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y5a-UB-HTa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="R7w-wP-3WR">
+            <objects>
+                <navigationController id="y5a-UB-HTa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wNt-9k-MNg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Fh-sS-kbE" kind="relationship" relationship="rootViewController" id="c6e-qp-jRZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cb-wp-rkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="119"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="OEk-FU-vLD">
             <objects>
@@ -39,6 +55,7 @@
                             <outlet property="delegate" destination="9Fh-sS-kbE" id="IXn-IQ-aXB"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="oiy-fT-ov2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THF-ce-SPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

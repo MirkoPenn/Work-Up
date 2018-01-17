@@ -178,6 +178,9 @@
 				ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
 				ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
 				ACC7EE44200F48CB00E55246 /* Main.storyboard */,
+				FE2466BF200F590900621F8B /* CollectionViewCell.swift */,
+				FE2466BE200F590900621F8B /* CollectionViewController.swift */,
+				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
 				ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
 				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
 				ACC7EE4C200F48CB00E55246 /* Info.plist */,
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2466C0200F590900621F8B /* CollectionViewController.swift in Sources */,
 				ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */,
 				ACC7EEA1200F54BF00E55246 /* CoreDataSwift.swift in Sources */,
 				ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */,
