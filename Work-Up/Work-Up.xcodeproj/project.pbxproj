@@ -22,6 +22,8 @@
 		ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7D200F48CC00E55246 /* NotificationController.swift */; };
 		ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE7F200F48CC00E55246 /* Assets.xcassets */; };
 		ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */; };
+		FE2466C0200F590900621F8B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466BE200F590900621F8B /* CollectionViewController.swift */; };
+		FE2466C1200F590900621F8B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466BF200F590900621F8B /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit App.entitlements"; sourceTree = "<group>"; };
 		ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		FE2466BE200F590900621F8B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FE2466BF200F590900621F8B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 				ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
 				ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
 				ACC7EE44200F48CB00E55246 /* Main.storyboard */,
+				FE2466BF200F590900621F8B /* CollectionViewCell.swift */,
+				FE2466BE200F590900621F8B /* CollectionViewController.swift */,
 				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
 				ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
 				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
@@ -435,7 +441,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2466C0200F590900621F8B /* CollectionViewController.swift in Sources */,
 				ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */,
+				FE2466C1200F590900621F8B /* CollectionViewCell.swift in Sources */,
 				ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
