@@ -17,6 +17,7 @@ class Exercise : NSManagedObject
     @NSManaged var identifier : String
     @NSManaged var name : String?
     @NSManaged var category : String?
+    @NSManaged var day : String?
     @NSManaged var weight : Float
     @NSManaged var series : Int
     @NSManaged var reps : Int
