@@ -172,10 +172,10 @@
 				ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
 				ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
 				ACC7EE44200F48CB00E55246 /* Main.storyboard */,
+				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
 				ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
 				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
 				ACC7EE4C200F48CB00E55246 /* Info.plist */,
-				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
 			);
 			path = "Work-Up";
 			sourceTree = "<group>";
