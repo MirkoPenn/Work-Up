@@ -25,6 +25,7 @@
 		ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA3200F5CEB00E55246 /* Exercise.swift */; };
 		ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */; };
 		FE2466C0200F590900621F8B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466C4200F676700621F8B /* AddExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwift.swift; sourceTree = "<group>"; };
 		ACC7EEA3200F5CEB00E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+		FE2466C4200F676700621F8B /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
 				ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
 				ACC7EE44200F48CB00E55246 /* Main.storyboard */,
+				FE2466C4200F676700621F8B /* AddExerciseViewController.swift */,
 				ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
 				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
 				ACC7EE4C200F48CB00E55246 /* Info.plist */,
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */,
 				FE2466C0200F590900621F8B /* (null) in Sources */,
 				ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */,
 				ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */,
