@@ -18,6 +18,8 @@ class MainTableViewController: UITableViewController {
     
     let context : NSManagedObjectContext =
     {
+        
+        
         // This is your xcdatamodeld file
         let modelURL = Bundle.main.url(forResource: "WorkUp", withExtension: "momd")
         let dataModel = NSManagedObjectModel(contentsOf: modelURL!)
@@ -57,8 +59,9 @@ class MainTableViewController: UITableViewController {
         
         super.viewDidLoad()
     
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
         
-        exercises = getAllExercises()
+        //exercises = getAllExercises()
         
     }
     
@@ -125,6 +128,12 @@ class MainTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    
+    
+    @objc func addExercise(sender: UIBarButtonItem){
+        performSegue(withIdentifier: "addSegue", sender: self)
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -179,5 +188,4 @@ class MainTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
