@@ -163,6 +163,8 @@ class MainTableViewController: UITableViewController {
         }
         
         cell.textLabel?.text = exercisesForDay[indexPath.row].name
+        
+        cell.detailTextLabel?.text =  "\(exercisesForDay[indexPath.row].category!), \(exercisesForDay[indexPath.row].series)x\(exercisesForDay[indexPath.row].reps) (\(exercisesForDay[indexPath.row].weight) kg)"
 
         return cell
     }

@@ -7,9 +7,45 @@
 //
 
 import UIKit
+import CoreData
 
 class AddExerciseViewController: UIViewController {
 
+    let context : NSManagedObjectContext =
+    {
+        
+        
+        // This is your xcdatamodeld file
+        let modelURL = Bundle.main.url(forResource: "WorkUp", withExtension: "momd")
+        let dataModel = NSManagedObjectModel(contentsOf: modelURL!)
+        
+        // This is where you are storing your SQLite database file
+        let documentsDirectory : NSURL! = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last as NSURL?
+        let storeURL = documentsDirectory.appendingPathComponent("WorkUp.sqlite")
+        
+        let psc = NSPersistentStoreCoordinator(managedObjectModel: dataModel!)
+        
+        var error : NSError?
+        do {
+            let store = try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+            
+            if let error = error
+            {
+                print("Uhoh, something happened! \(error), \(error.userInfo)")
+            }
+            
+        } catch {
+            
+        }
+        
+        let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        
+        context.persistentStoreCoordinator = psc
+        context.undoManager = nil
+        
+        
+        return context
+    }()
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -40,8 +76,35 @@ class AddExerciseViewController: UIViewController {
     
     @IBAction func addExercise(_ sender: UIButton) {
         
-        let newExercise = Exercise()
+        var newExercise: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
         
+        newExercise.name = nameTextField.text
+        newExercise.category = categoryTextField.text
+        newExercise.day = dayTextField.text
+        newExercise.weight = Float(weightTextField.text!)!
+        newExercise.series = Int(seriesTextField.text!)!
+        newExercise.reps = Int(repsTextField.text!)!
+        newExercise.restSeconds = Int(restTextField.text!)!
+        
+        saveContext()
+        
+        self.navigationController?.popViewController(animated: true)
+        
+        
+    }
+    
+    func saveContext() -> Bool
+    {
+        if context.hasChanges
+        {
+            do {
+                try context.save()
+            } catch {
+                return false
+            }
+            
+        }
+        return true
     }
     
     /*
