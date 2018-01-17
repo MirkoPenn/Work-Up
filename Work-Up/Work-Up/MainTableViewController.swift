@@ -16,12 +16,12 @@ class MainTableViewController: UITableViewController {
     let context : NSManagedObjectContext =
     {
         // This is your xcdatamodeld file
-        let modelURL = Bundle.main.url(forResource: "MyApp", withExtension: "momd")
+        let modelURL = Bundle.main.url(forResource: "WorkUp", withExtension: "momd")
         let dataModel = NSManagedObjectModel(contentsOf: modelURL!)
         
         // This is where you are storing your SQLite database file
         let documentsDirectory : NSURL! = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last as NSURL?
-        let storeURL = documentsDirectory.appendingPathComponent("MyApp.sqlite")
+        let storeURL = documentsDirectory.appendingPathComponent("WorkUp.sqlite")
         
         let psc = NSPersistentStoreCoordinator(managedObjectModel: dataModel!)
         
@@ -53,22 +53,26 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
-        
-        exercise.name = "nome"
-        
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
-       
-        fetchRequest.predicate = NSPredicate(format: "name ==[c] %@", "nome")
-        
-        do{
-            
-        let results = try context.fetch(fetchRequest) as! [Exercise]
-            print(results[0].name ?? "error")
-            
-        } catch {
-            
-        }
+//        print("hey")
+//
+//        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
+//
+//        exercise.name = "nome"
+//
+//        print(saveContext())
+//        
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+//
+//        fetchRequest.predicate = NSPredicate(format: "name ==[c] %@", "nome")
+//
+//        do{
+//
+//        let results = try context.fetch(fetchRequest) as! [Exercise]
+//            print(results[0].name ?? "error")
+//
+//        } catch {
+//
+//        }
         
         
     }
@@ -81,11 +85,11 @@ class MainTableViewController: UITableViewController {
             do {
             try context.save()
             } catch {
-                
+                return false
             }
             
-            
         }
+        return true
     }
 
     override func didReceiveMemoryWarning() {

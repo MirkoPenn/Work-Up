@@ -22,9 +22,9 @@
 		ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7D200F48CC00E55246 /* NotificationController.swift */; };
 		ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE7F200F48CC00E55246 /* Assets.xcassets */; };
 		ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */; };
-		ACC7EE9C200F514500E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE9B200F514500E55246 /* Exercise.swift */; };
-		ACC7EE9F200F53A900E55246 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE9D200F53A900E55246 /* Model.xcdatamodeld */; };
-		ACC7EEA1200F54BF00E55246 /* CoreDataSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */; };
+		ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA3200F5CEB00E55246 /* Exercise.swift */; };
+		ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */; };
+		FE2466C0200F590900621F8B /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,9 +111,9 @@
 		ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit App.entitlements"; sourceTree = "<group>"; };
 		ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		ACC7EE9B200F514500E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		ACC7EE9E200F53A900E55246 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwift.swift; sourceTree = "<group>"; };
+		ACC7EEA3200F5CEB00E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,16 +178,13 @@
 				ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
 				ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
 				ACC7EE44200F48CB00E55246 /* Main.storyboard */,
-				FE2466BF200F590900621F8B /* CollectionViewCell.swift */,
-				FE2466BE200F590900621F8B /* CollectionViewController.swift */,
-				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
 				ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
 				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
 				ACC7EE4C200F48CB00E55246 /* Info.plist */,
 				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
-				ACC7EE9B200F514500E55246 /* Exercise.swift */,
 				ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */,
-				ACC7EE9D200F53A900E55246 /* Model.xcdatamodeld */,
+				ACC7EEA3200F5CEB00E55246 /* Exercise.swift */,
+				ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */,
 			);
 			path = "Work-Up";
 			sourceTree = "<group>";
@@ -447,12 +444,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE2466C0200F590900621F8B /* CollectionViewController.swift in Sources */,
+				FE2466C0200F590900621F8B /* (null) in Sources */,
+				ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */,
+				ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */,
 				ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */,
-				ACC7EEA1200F54BF00E55246 /* CoreDataSwift.swift in Sources */,
 				ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */,
-				ACC7EE9C200F514500E55246 /* Exercise.swift in Sources */,
-				ACC7EE9F200F53A900E55246 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,13 +874,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ACC7EE9D200F53A900E55246 /* Model.xcdatamodeld */ = {
+		ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				ACC7EE9E200F53A900E55246 /* Model.xcdatamodel */,
+				ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */,
 			);
-			currentVersion = ACC7EE9E200F53A900E55246 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */;
+			path = WorkUp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
