@@ -22,6 +22,9 @@
 		ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7D200F48CC00E55246 /* NotificationController.swift */; };
 		ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE7F200F48CC00E55246 /* Assets.xcassets */; };
 		ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */; };
+		ACC7EE9C200F514500E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE9B200F514500E55246 /* Exercise.swift */; };
+		ACC7EE9F200F53A900E55246 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE9D200F53A900E55246 /* Model.xcdatamodeld */; };
+		ACC7EEA1200F54BF00E55246 /* CoreDataSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit App.entitlements"; sourceTree = "<group>"; };
 		ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		ACC7EE9B200F514500E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		ACC7EE9E200F53A900E55246 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,9 @@
 				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
 				ACC7EE4C200F48CB00E55246 /* Info.plist */,
 				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
+				ACC7EE9B200F514500E55246 /* Exercise.swift */,
+				ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */,
+				ACC7EE9D200F53A900E55246 /* Model.xcdatamodeld */,
 			);
 			path = "Work-Up";
 			sourceTree = "<group>";
@@ -436,7 +445,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */,
+				ACC7EEA1200F54BF00E55246 /* CoreDataSwift.swift in Sources */,
 				ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */,
+				ACC7EE9C200F514500E55246 /* Exercise.swift in Sources */,
+				ACC7EE9F200F53A900E55246 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,6 +872,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACC7EE9D200F53A900E55246 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACC7EE9E200F53A900E55246 /* Model.xcdatamodel */,
+			);
+			currentVersion = ACC7EE9E200F53A900E55246 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACC7EE35200F48CB00E55246 /* Project object */;
 }

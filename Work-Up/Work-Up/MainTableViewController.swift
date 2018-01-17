@@ -7,17 +7,85 @@
 //
 
 import UIKit
+import CoreData
+
+
 
 class MainTableViewController: UITableViewController {
+    
+    let context : NSManagedObjectContext =
+    {
+        // This is your xcdatamodeld file
+        let modelURL = Bundle.main.url(forResource: "MyApp", withExtension: "momd")
+        let dataModel = NSManagedObjectModel(contentsOf: modelURL!)
+        
+        // This is where you are storing your SQLite database file
+        let documentsDirectory : NSURL! = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last as NSURL?
+        let storeURL = documentsDirectory.appendingPathComponent("MyApp.sqlite")
+        
+        let psc = NSPersistentStoreCoordinator(managedObjectModel: dataModel!)
+        
+        var error : NSError?
+        do {
+            let store = try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+            
+            if let error = error
+            {
+                print("Uhoh, something happened! \(error), \(error.userInfo)")
+            }
+            
+        } catch {
+            
+        }
+        
+        let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        
+        context.persistentStoreCoordinator = psc
+        context.undoManager = nil
+        
+        
+        return context
+    }()
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
+        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
+        
+        exercise.name = "nome"
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+       
+        fetchRequest.predicate = NSPredicate(format: "name ==[c] %@", "nome")
+        
+        do{
+            
+        let results = try context.fetch(fetchRequest) as! [Exercise]
+            print(results[0].name ?? "error")
+            
+        } catch {
+            
+        }
+        
+        
+    }
+    
+    
+    func saveContext() -> Bool
+    {
+        if context.hasChanges
+        {
+            do {
+            try context.save()
+            } catch {
+                
+            }
+            
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +104,6 @@ class MainTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
