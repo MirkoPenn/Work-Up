@@ -13,6 +13,9 @@ import CoreData
 
 class MainTableViewController: UITableViewController {
     
+    var exercises: [Exercise] = []
+    var days: [String] = []
+    
     let context : NSManagedObjectContext =
     {
         // This is your xcdatamodeld file
@@ -51,30 +54,31 @@ class MainTableViewController: UITableViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
     
-//        print("hey")
-//
-//        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
-//
-//        exercise.name = "nome"
-//
-//        print(saveContext())
-//        
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
-//
-//        fetchRequest.predicate = NSPredicate(format: "name ==[c] %@", "nome")
-//
-//        do{
-//
-//        let results = try context.fetch(fetchRequest) as! [Exercise]
-//            print(results[0].name ?? "error")
-//
-//        } catch {
-//
-//        }
         
+        exercises = getAllExercises()
         
+    }
+    
+    func getAllExercises() -> [Exercise]{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+        var results: [Exercise]
+        
+        do{
+            
+            results = try context.fetch(fetchRequest) as! [Exercise]
+            print(results[0].name ?? "error")
+            
+        } catch {
+            
+            results = []
+            
+        }
+        
+        return results
     }
     
     
@@ -100,8 +104,21 @@ class MainTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+       
+        for exercise in exercises {
+            if (!days.contains(exercise.day!)){
+                days.append(exercise.day!)
+            }
+        }
+        
+        return days.count
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return days[section]
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
