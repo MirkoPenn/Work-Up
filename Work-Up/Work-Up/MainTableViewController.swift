@@ -61,24 +61,12 @@ class MainTableViewController: UITableViewController {
     
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
         
-        var esercizioprova1: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
-        esercizioprova1.name = "prova"
-        esercizioprova1.day = "lunedì"
-        
-        print(saveContext())
-        
-        var esercizioprova2: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
-        esercizioprova2.name = "dadadada"
-        esercizioprova2.day = "martedì"
-        
-        print(saveContext())
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
         exercises = getAllExercises()
-        
-        
-        
+        tableView.reloadData()
         
     }
     
