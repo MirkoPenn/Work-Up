@@ -52,7 +52,7 @@ class MainTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
 //        print("hey")
 //
 //        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
@@ -77,6 +77,9 @@ class MainTableViewController: UITableViewController {
         
     }
     
+    @objc func addExercise(sender: UIBarButtonItem){
+        performSegue(withIdentifier: "addSegue", sender: self)
+    }
     
     func saveContext() -> Bool
     {
