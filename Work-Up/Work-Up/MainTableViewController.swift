@@ -60,28 +60,25 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
     
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
-//        print("hey")
-//
-//        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
-//
-//        exercise.name = "nome"
-//
-//        print(saveContext())
-//        
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
-//
-//        fetchRequest.predicate = NSPredicate(format: "name ==[c] %@", "nome")
-//
-//        do{
-//
-//        let results = try context.fetch(fetchRequest) as! [Exercise]
-//            print(results[0].name ?? "error")
-//
-//        } catch {
-//
-//        }
         
-        //exercises = getAllExercises()
+        var esercizioprova1: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
+        esercizioprova1.name = "prova"
+        esercizioprova1.day = "lunedì"
+        
+        print(saveContext())
+        
+        var esercizioprova2: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
+        esercizioprova2.name = "dadadada"
+        esercizioprova2.day = "martedì"
+        
+        print(saveContext())
+        
+        
+        
+        exercises = getAllExercises()
+        
+        
+        
         
     }
     
@@ -93,7 +90,6 @@ class MainTableViewController: UITableViewController {
         do{
             
             results = try context.fetch(fetchRequest) as! [Exercise]
-            print(results[0].name ?? "error")
             
         } catch {
             
@@ -146,7 +142,17 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        var rows = 0
+        let day = days[section]
+        for exercise in exercises {
+            if (exercise.day! == day) {
+                rows = rows + 1
+            }
+        }
+        return rows
+        
+        
     }
     
     
@@ -154,15 +160,25 @@ class MainTableViewController: UITableViewController {
         performSegue(withIdentifier: "addSegue", sender: self)
     }
     
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath)
 
         // Configure the cell...
+        var exercisesForDay: [Exercise] = []
+        
+        let day = days[indexPath.section]
+        for exercise in exercises {
+            if (exercise.day! == day) {
+                exercisesForDay.append(exercise)
+            }
+        }
+        
+        cell.textLabel?.text = exercisesForDay[indexPath.row].name
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
