@@ -60,6 +60,26 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
     
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
+//        print("hey")
+//
+//        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
+//
+//        exercise.name = "nome"
+//
+//        print(saveContext())
+//        
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+//
+//        fetchRequest.predicate = NSPredicate(format: "name ==[c] %@", "nome")
+//
+//        do{
+//
+//        let results = try context.fetch(fetchRequest) as! [Exercise]
+//            print(results[0].name ?? "error")
+//
+//        } catch {
+//
+//        }
         
         //exercises = getAllExercises()
         
