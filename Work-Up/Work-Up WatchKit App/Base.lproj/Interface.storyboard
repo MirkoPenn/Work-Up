@@ -14,10 +14,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Work_Up_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="44" alignment="center" text="Day" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.0" id="h3L-oW-hQr">
+                        <label width="1" height="46" alignment="center" text="Day" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.0" id="h3L-oW-hQr">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
-                        <button width="1" height="0.5" alignment="center" verticalAlignment="center" title="START" id="MSu-7B-N5d"/>
+                        <button width="0.59999999999999998" height="0.5" alignment="center" verticalAlignment="center" title="START" id="MSu-7B-N5d">
+                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.77647058823529413" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="label" destination="h3L-oW-hQr" id="xu4-mm-oZJ"/>
