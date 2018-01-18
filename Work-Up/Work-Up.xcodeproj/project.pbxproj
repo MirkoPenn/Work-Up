@@ -25,6 +25,8 @@
 		ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA3200F5CEB00E55246 /* Exercise.swift */; };
 		ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */; };
 		ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */; };
+		B39B52EA2010B50900C9C4E0 /* RestWKInterfaceActivityRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B52E92010B50900C9C4E0 /* RestWKInterfaceActivityRing.swift */; };
+		B39B52EC2010B53900C9C4E0 /* RestInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */; };
 		FE2466C0200F590900621F8B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466C4200F676700621F8B /* AddExerciseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +120,8 @@
 		ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
 		ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
 		ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+		B39B52E92010B50900C9C4E0 /* RestWKInterfaceActivityRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWKInterfaceActivityRing.swift; sourceTree = "<group>"; };
+		B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterfaceController.swift; sourceTree = "<group>"; };
 		FE2466C4200F676700621F8B /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +236,8 @@
 				ACC7EE79200F48CC00E55246 /* InterfaceController.swift */,
 				ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */,
 				ACC7EE7D200F48CC00E55246 /* NotificationController.swift */,
+				B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */,
+				B39B52E92010B50900C9C4E0 /* RestWKInterfaceActivityRing.swift */,
 				ACC7EE7F200F48CC00E55246 /* Assets.xcassets */,
 				ACC7EE81200F48CC00E55246 /* Info.plist */,
 				ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */,
@@ -481,10 +487,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39B52EA2010B50900C9C4E0 /* RestWKInterfaceActivityRing.swift in Sources */,
 				ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */,
 				ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */,
 				ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */,
 				ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */,
+				B39B52EC2010B53900C9C4E0 /* RestInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
