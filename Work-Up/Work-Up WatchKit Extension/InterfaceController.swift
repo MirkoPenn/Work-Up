@@ -21,6 +21,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate{
 
     @IBOutlet var label: WKInterfaceLabel!
     
+    var exercises: [Exercise] = []
     
     
     let coreDataContext : NSManagedObjectContext =
@@ -73,22 +74,69 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate{
         
         // Configure interface objects here.
        
+        if(exercises.count != 0){
+            print("Found \(exercises.count) exercises")
+        }
         
-        print("hey")
-        
+    }
+    func saveContext() -> Bool
+    {
+        if coreDataContext.hasChanges
+        {
+            do {
+                try coreDataContext.save()
+            } catch {
+                return false
+            }
+            
+        }
+        return true
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         
-         var exercises = applicationContext["eNames"] as? [String] ?? []
+        // erase old database
         
-        var newText: String = ""
-        
-        for exercise in exercises {
-            newText.append("\(exercise)\n")
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+        let request = NSBatchDeleteRequest(fetchRequest: fetch)
+        do {
+            _ = try coreDataContext.execute(request)
+        } catch {
+            
         }
         
-        label.setText(newText)
+        // rewrite database based on applicationContext
+        
+         var identifiers = applicationContext["identifiers"] as? [String] ?? []
+        var names = applicationContext["names"] as? [String] ?? []
+        var categories = applicationContext["categories"] as? [String] ?? []
+        var days = applicationContext["days"] as? [String] ?? []
+        var weight = applicationContext["weight"] as? [Float] ?? []
+        var series = applicationContext["series"] as? [Int] ?? []
+        var reps = applicationContext["reps"] as? [Int] ?? []
+        var restSeconds = applicationContext["restSeconds"] as? [Int] ?? []
+        
+        var newExercises: [Exercise] = []
+        
+        for i in 0...identifiers.count-1 {
+            
+            var newExercise: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: coreDataContext) as! Exercise
+            newExercise.identifier = identifiers[i]
+            newExercise.name = names[i]
+            newExercise.category = categories[i]
+            newExercise.day = days[i]
+            newExercise.weight = weight[i]
+            newExercise.series = Int64(series[i])
+            newExercise.reps = Int64(reps[i])
+            newExercise.restSeconds = Int64(restSeconds[i])
+            
+            newExercises.append(newExercise)
+            
+        }
+        
+        exercises = newExercises
+    
+        saveContext()
         
     }
     
