@@ -1,931 +1,932 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 48;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 48;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		AC700C6C2010BF6E0056C9D5 /* ExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */; };
-		AC700C6E2010C37A0056C9D5 /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */; };
-		ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE40200F48CB00E55246 /* AppDelegate.swift */; };
-		ACC7EE46200F48CB00E55246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE44200F48CB00E55246 /* Main.storyboard */; };
-		ACC7EE48200F48CB00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE47200F48CB00E55246 /* Assets.xcassets */; };
-		ACC7EE4B200F48CB00E55246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */; };
-		ACC7EE56200F48CC00E55246 /* Work_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE55200F48CC00E55246 /* Work_UpTests.swift */; };
-		ACC7EE61200F48CC00E55246 /* Work_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE60200F48CC00E55246 /* Work_UpUITests.swift */; };
-		ACC7EE66200F48CC00E55246 /* Work-Up WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */; };
-		ACC7EE6C200F48CC00E55246 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE6A200F48CC00E55246 /* Interface.storyboard */; };
-		ACC7EE6E200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE6D200F48CC00E55246 /* Assets.xcassets */; };
-		ACC7EE75200F48CC00E55246 /* Work-Up WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE79200F48CC00E55246 /* InterfaceController.swift */; };
-		ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */; };
-		ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7D200F48CC00E55246 /* NotificationController.swift */; };
-		ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE7F200F48CC00E55246 /* Assets.xcassets */; };
-		ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */; };
-		ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA3200F5CEB00E55246 /* Exercise.swift */; };
-		ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */; };
-		ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */; };
-		B39B52EC2010B53900C9C4E0 /* RestInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */; };
-		FE2466C0200F590900621F8B /* (null) in Sources */ = {isa = PBXBuildFile; };
-		FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466C4200F676700621F8B /* AddExerciseViewController.swift */; };
+        AC700C6C2010BF6E0056C9D5 /* ExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */; };
+        AC700C6E2010C37A0056C9D5 /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */; };
+        ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE40200F48CB00E55246 /* AppDelegate.swift */; };
+        ACC7EE46200F48CB00E55246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE44200F48CB00E55246 /* Main.storyboard */; };
+        ACC7EE48200F48CB00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE47200F48CB00E55246 /* Assets.xcassets */; };
+        ACC7EE4B200F48CB00E55246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */; };
+        ACC7EE56200F48CC00E55246 /* Work_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE55200F48CC00E55246 /* Work_UpTests.swift */; };
+        ACC7EE61200F48CC00E55246 /* Work_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE60200F48CC00E55246 /* Work_UpUITests.swift */; };
+        ACC7EE66200F48CC00E55246 /* Work-Up WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */; };
+        ACC7EE6C200F48CC00E55246 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE6A200F48CC00E55246 /* Interface.storyboard */; };
+        ACC7EE6E200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE6D200F48CC00E55246 /* Assets.xcassets */; };
+        ACC7EE75200F48CC00E55246 /* Work-Up WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+        ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE79200F48CC00E55246 /* InterfaceController.swift */; };
+        ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */; };
+        ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE7D200F48CC00E55246 /* NotificationController.swift */; };
+        ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE7F200F48CC00E55246 /* Assets.xcassets */; };
+        ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */; };
+        ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA3200F5CEB00E55246 /* Exercise.swift */; };
+        ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */; };
+        ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */; };
+        B39B52EC2010B53900C9C4E0 /* RestInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */; };
+        FE2466C0200F590900621F8B /* (null) in Sources */ = {isa = PBXBuildFile; };
+        FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466C4200F676700621F8B /* AddExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ACC7EE52200F48CC00E55246 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACC7EE3C200F48CB00E55246;
-			remoteInfo = "Work-Up";
-		};
-		ACC7EE5D200F48CC00E55246 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACC7EE3C200F48CB00E55246;
-			remoteInfo = "Work-Up";
-		};
-		ACC7EE67200F48CC00E55246 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACC7EE64200F48CC00E55246;
-			remoteInfo = "Work-Up WatchKit App";
-		};
-		ACC7EE76200F48CC00E55246 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACC7EE73200F48CC00E55246;
-			remoteInfo = "Work-Up WatchKit Extension";
-		};
+        ACC7EE52200F48CC00E55246 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = ACC7EE3C200F48CB00E55246;
+            remoteInfo = "Work-Up";
+        };
+        ACC7EE5D200F48CC00E55246 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = ACC7EE3C200F48CB00E55246;
+            remoteInfo = "Work-Up";
+        };
+        ACC7EE67200F48CC00E55246 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = ACC7EE64200F48CC00E55246;
+            remoteInfo = "Work-Up WatchKit App";
+        };
+        ACC7EE76200F48CC00E55246 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = ACC7EE35200F48CB00E55246 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = ACC7EE73200F48CC00E55246;
+            remoteInfo = "Work-Up WatchKit Extension";
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ACC7EE88200F48CC00E55246 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				ACC7EE75200F48CC00E55246 /* Work-Up WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE8C200F48CC00E55246 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				ACC7EE66200F48CC00E55246 /* Work-Up WatchKit App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        ACC7EE88200F48CC00E55246 /* Embed App Extensions */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 13;
+            files = (
+                ACC7EE75200F48CC00E55246 /* Work-Up WatchKit Extension.appex in Embed App Extensions */,
+            );
+            name = "Embed App Extensions";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE8C200F48CC00E55246 /* Embed Watch Content */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+            dstSubfolderSpec = 16;
+            files = (
+                ACC7EE66200F48CC00E55246 /* Work-Up WatchKit App.app in Embed Watch Content */,
+            );
+            name = "Embed Watch Content";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInterfaceController.swift; sourceTree = "<group>"; };
-		AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
-		ACC7EE3D200F48CB00E55246 /* Work-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Work-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC7EE40200F48CB00E55246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACC7EE45200F48CB00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ACC7EE47200F48CB00E55246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACC7EE4A200F48CB00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ACC7EE4C200F48CB00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC7EE51200F48CC00E55246 /* Work-UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Work-UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC7EE55200F48CC00E55246 /* Work_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_UpTests.swift; sourceTree = "<group>"; };
-		ACC7EE57200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC7EE5C200F48CC00E55246 /* Work-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Work-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC7EE60200F48CC00E55246 /* Work_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_UpUITests.swift; sourceTree = "<group>"; };
-		ACC7EE62200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Work-Up WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC7EE6B200F48CC00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		ACC7EE6D200F48CC00E55246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACC7EE6F200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Work-Up WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC7EE79200F48CC00E55246 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		ACC7EE7D200F48CC00E55246 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		ACC7EE7F200F48CC00E55246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACC7EE81200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		ACC7EE96200F48D400E55246 /* Work-Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up.entitlements"; sourceTree = "<group>"; };
-		ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit App.entitlements"; sourceTree = "<group>"; };
-		ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwift.swift; sourceTree = "<group>"; };
-		ACC7EEA3200F5CEB00E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
-		ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
-		ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
-		B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterfaceController.swift; sourceTree = "<group>"; };
-		FE2466C4200F676700621F8B /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+        AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInterfaceController.swift; sourceTree = "<group>"; };
+        AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
+        ACC7EE3D200F48CB00E55246 /* Work-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Work-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        ACC7EE40200F48CB00E55246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        ACC7EE45200F48CB00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        ACC7EE47200F48CB00E55246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        ACC7EE4A200F48CB00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        ACC7EE4C200F48CB00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        ACC7EE51200F48CC00E55246 /* Work-UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Work-UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        ACC7EE55200F48CC00E55246 /* Work_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_UpTests.swift; sourceTree = "<group>"; };
+        ACC7EE57200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        ACC7EE5C200F48CC00E55246 /* Work-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Work-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        ACC7EE60200F48CC00E55246 /* Work_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work_UpUITests.swift; sourceTree = "<group>"; };
+        ACC7EE62200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Work-Up WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        ACC7EE6B200F48CC00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+        ACC7EE6D200F48CC00E55246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        ACC7EE6F200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Work-Up WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+        ACC7EE79200F48CC00E55246 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+        ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+        ACC7EE7D200F48CC00E55246 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+        ACC7EE7F200F48CC00E55246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        ACC7EE81200F48CC00E55246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+        ACC7EE96200F48D400E55246 /* Work-Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up.entitlements"; sourceTree = "<group>"; };
+        ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit App.entitlements"; sourceTree = "<group>"; };
+        ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Work-Up WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+        ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+        ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwift.swift; sourceTree = "<group>"; };
+        ACC7EEA3200F5CEB00E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+        ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+        ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+        ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+        B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterfaceController.swift; sourceTree = "<group>"; };
+        FE2466C4200F676700621F8B /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ACC7EE3A200F48CB00E55246 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE4E200F48CC00E55246 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE59200F48CC00E55246 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE71200F48CC00E55246 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        ACC7EE3A200F48CB00E55246 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE4E200F48CC00E55246 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE59200F48CC00E55246 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE71200F48CC00E55246 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ACC7EE34200F48CB00E55246 = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE3F200F48CB00E55246 /* Work-Up */,
-				ACC7EE54200F48CC00E55246 /* Work-UpTests */,
-				ACC7EE5F200F48CC00E55246 /* Work-UpUITests */,
-				ACC7EE69200F48CC00E55246 /* Work-Up WatchKit App */,
-				ACC7EE78200F48CC00E55246 /* Work-Up WatchKit Extension */,
-				ACC7EE3E200F48CB00E55246 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		ACC7EE3E200F48CB00E55246 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE3D200F48CB00E55246 /* Work-Up.app */,
-				ACC7EE51200F48CC00E55246 /* Work-UpTests.xctest */,
-				ACC7EE5C200F48CC00E55246 /* Work-UpUITests.xctest */,
-				ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */,
-				ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACC7EE3F200F48CB00E55246 /* Work-Up */ = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
-				ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
-				ACC7EE44200F48CB00E55246 /* Main.storyboard */,
-				FE2466C4200F676700621F8B /* AddExerciseViewController.swift */,
-				ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
-				ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
-				ACC7EE4C200F48CB00E55246 /* Info.plist */,
-				ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
-				ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */,
-				ACC7EEA3200F5CEB00E55246 /* Exercise.swift */,
-				ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */,
-			);
-			path = "Work-Up";
-			sourceTree = "<group>";
-		};
-		ACC7EE54200F48CC00E55246 /* Work-UpTests */ = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE55200F48CC00E55246 /* Work_UpTests.swift */,
-				ACC7EE57200F48CC00E55246 /* Info.plist */,
-			);
-			path = "Work-UpTests";
-			sourceTree = "<group>";
-		};
-		ACC7EE5F200F48CC00E55246 /* Work-UpUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE60200F48CC00E55246 /* Work_UpUITests.swift */,
-				ACC7EE62200F48CC00E55246 /* Info.plist */,
-			);
-			path = "Work-UpUITests";
-			sourceTree = "<group>";
-		};
-		ACC7EE69200F48CC00E55246 /* Work-Up WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */,
-				ACC7EE6A200F48CC00E55246 /* Interface.storyboard */,
-				ACC7EE6D200F48CC00E55246 /* Assets.xcassets */,
-				ACC7EE6F200F48CC00E55246 /* Info.plist */,
-				ACC7EEAB200F998B00E55246 /* WorkUp.xcdatamodeld */,
-			);
-			path = "Work-Up WatchKit App";
-			sourceTree = "<group>";
-		};
-		ACC7EE78200F48CC00E55246 /* Work-Up WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */,
-				ACC7EE79200F48CC00E55246 /* InterfaceController.swift */,
-				ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */,
-				ACC7EE7D200F48CC00E55246 /* NotificationController.swift */,
-				B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */,
-				ACC7EE7F200F48CC00E55246 /* Assets.xcassets */,
-				ACC7EE81200F48CC00E55246 /* Info.plist */,
-				ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */,
-				ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */,
-				AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */,
-				AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */,
-			);
-			path = "Work-Up WatchKit Extension";
-			sourceTree = "<group>";
-		};
+        ACC7EE34200F48CB00E55246 = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE3F200F48CB00E55246 /* Work-Up */,
+                ACC7EE54200F48CC00E55246 /* Work-UpTests */,
+                ACC7EE5F200F48CC00E55246 /* Work-UpUITests */,
+                ACC7EE69200F48CC00E55246 /* Work-Up WatchKit App */,
+                ACC7EE78200F48CC00E55246 /* Work-Up WatchKit Extension */,
+                ACC7EE3E200F48CB00E55246 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        ACC7EE3E200F48CB00E55246 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE3D200F48CB00E55246 /* Work-Up.app */,
+                ACC7EE51200F48CC00E55246 /* Work-UpTests.xctest */,
+                ACC7EE5C200F48CC00E55246 /* Work-UpUITests.xctest */,
+                ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */,
+                ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        ACC7EE3F200F48CB00E55246 /* Work-Up */ = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE96200F48D400E55246 /* Work-Up.entitlements */,
+                ACC7EE40200F48CB00E55246 /* AppDelegate.swift */,
+                ACC7EE44200F48CB00E55246 /* Main.storyboard */,
+                FE2466C4200F676700621F8B /* AddExerciseViewController.swift */,
+                ACC7EE47200F48CB00E55246 /* Assets.xcassets */,
+                ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */,
+                ACC7EE4C200F48CB00E55246 /* Info.plist */,
+                ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */,
+                ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */,
+                ACC7EEA3200F5CEB00E55246 /* Exercise.swift */,
+                ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */,
+            );
+            path = "Work-Up";
+            sourceTree = "<group>";
+        };
+        ACC7EE54200F48CC00E55246 /* Work-UpTests */ = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE55200F48CC00E55246 /* Work_UpTests.swift */,
+                ACC7EE57200F48CC00E55246 /* Info.plist */,
+            );
+            path = "Work-UpTests";
+            sourceTree = "<group>";
+        };
+        ACC7EE5F200F48CC00E55246 /* Work-UpUITests */ = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE60200F48CC00E55246 /* Work_UpUITests.swift */,
+                ACC7EE62200F48CC00E55246 /* Info.plist */,
+            );
+            path = "Work-UpUITests";
+            sourceTree = "<group>";
+        };
+        ACC7EE69200F48CC00E55246 /* Work-Up WatchKit App */ = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE97200F48DA00E55246 /* Work-Up WatchKit App.entitlements */,
+                ACC7EE6A200F48CC00E55246 /* Interface.storyboard */,
+                ACC7EE6D200F48CC00E55246 /* Assets.xcassets */,
+                ACC7EE6F200F48CC00E55246 /* Info.plist */,
+                ACC7EEAB200F998B00E55246 /* WorkUp.xcdatamodeld */,
+            );
+            path = "Work-Up WatchKit App";
+            sourceTree = "<group>";
+        };
+        ACC7EE78200F48CC00E55246 /* Work-Up WatchKit Extension */ = {
+            isa = PBXGroup;
+            children = (
+                ACC7EE98200F48DE00E55246 /* Work-Up WatchKit Extension.entitlements */,
+                ACC7EE79200F48CC00E55246 /* InterfaceController.swift */,
+                ACC7EE7B200F48CC00E55246 /* ExtensionDelegate.swift */,
+                ACC7EE7D200F48CC00E55246 /* NotificationController.swift */,
+                B39B52EB2010B53900C9C4E0 /* RestInterfaceController.swift */,
+                ACC7EE7F200F48CC00E55246 /* Assets.xcassets */,
+                ACC7EE81200F48CC00E55246 /* Info.plist */,
+                ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */,
+                ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */,
+                AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */,
+                AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */,
+            );
+            path = "Work-Up WatchKit Extension";
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACC7EE3C200F48CB00E55246 /* Work-Up */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACC7EE8D200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up" */;
-			buildPhases = (
-				ACC7EE39200F48CB00E55246 /* Sources */,
-				ACC7EE3A200F48CB00E55246 /* Frameworks */,
-				ACC7EE3B200F48CB00E55246 /* Resources */,
-				ACC7EE8C200F48CC00E55246 /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACC7EE68200F48CC00E55246 /* PBXTargetDependency */,
-			);
-			name = "Work-Up";
-			productName = "Work-Up";
-			productReference = ACC7EE3D200F48CB00E55246 /* Work-Up.app */;
-			productType = "com.apple.product-type.application";
-		};
-		ACC7EE50200F48CC00E55246 /* Work-UpTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACC7EE90200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpTests" */;
-			buildPhases = (
-				ACC7EE4D200F48CC00E55246 /* Sources */,
-				ACC7EE4E200F48CC00E55246 /* Frameworks */,
-				ACC7EE4F200F48CC00E55246 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACC7EE53200F48CC00E55246 /* PBXTargetDependency */,
-			);
-			name = "Work-UpTests";
-			productName = "Work-UpTests";
-			productReference = ACC7EE51200F48CC00E55246 /* Work-UpTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ACC7EE5B200F48CC00E55246 /* Work-UpUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACC7EE93200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpUITests" */;
-			buildPhases = (
-				ACC7EE58200F48CC00E55246 /* Sources */,
-				ACC7EE59200F48CC00E55246 /* Frameworks */,
-				ACC7EE5A200F48CC00E55246 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACC7EE5E200F48CC00E55246 /* PBXTargetDependency */,
-			);
-			name = "Work-UpUITests";
-			productName = "Work-UpUITests";
-			productReference = ACC7EE5C200F48CC00E55246 /* Work-UpUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		ACC7EE64200F48CC00E55246 /* Work-Up WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACC7EE89200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit App" */;
-			buildPhases = (
-				ACC7EE63200F48CC00E55246 /* Resources */,
-				ACC7EE88200F48CC00E55246 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACC7EE77200F48CC00E55246 /* PBXTargetDependency */,
-			);
-			name = "Work-Up WatchKit App";
-			productName = "Work-Up WatchKit App";
-			productReference = ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		ACC7EE73200F48CC00E55246 /* Work-Up WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACC7EE85200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit Extension" */;
-			buildPhases = (
-				ACC7EE70200F48CC00E55246 /* Sources */,
-				ACC7EE71200F48CC00E55246 /* Frameworks */,
-				ACC7EE72200F48CC00E55246 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Work-Up WatchKit Extension";
-			productName = "Work-Up WatchKit Extension";
-			productReference = ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
+        ACC7EE3C200F48CB00E55246 /* Work-Up */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = ACC7EE8D200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up" */;
+            buildPhases = (
+                ACC7EE39200F48CB00E55246 /* Sources */,
+                ACC7EE3A200F48CB00E55246 /* Frameworks */,
+                ACC7EE3B200F48CB00E55246 /* Resources */,
+                ACC7EE8C200F48CC00E55246 /* Embed Watch Content */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                ACC7EE68200F48CC00E55246 /* PBXTargetDependency */,
+            );
+            name = "Work-Up";
+            productName = "Work-Up";
+            productReference = ACC7EE3D200F48CB00E55246 /* Work-Up.app */;
+            productType = "com.apple.product-type.application";
+        };
+        ACC7EE50200F48CC00E55246 /* Work-UpTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = ACC7EE90200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpTests" */;
+            buildPhases = (
+                ACC7EE4D200F48CC00E55246 /* Sources */,
+                ACC7EE4E200F48CC00E55246 /* Frameworks */,
+                ACC7EE4F200F48CC00E55246 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                ACC7EE53200F48CC00E55246 /* PBXTargetDependency */,
+            );
+            name = "Work-UpTests";
+            productName = "Work-UpTests";
+            productReference = ACC7EE51200F48CC00E55246 /* Work-UpTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        ACC7EE5B200F48CC00E55246 /* Work-UpUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = ACC7EE93200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpUITests" */;
+            buildPhases = (
+                ACC7EE58200F48CC00E55246 /* Sources */,
+                ACC7EE59200F48CC00E55246 /* Frameworks */,
+                ACC7EE5A200F48CC00E55246 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                ACC7EE5E200F48CC00E55246 /* PBXTargetDependency */,
+            );
+            name = "Work-UpUITests";
+            productName = "Work-UpUITests";
+            productReference = ACC7EE5C200F48CC00E55246 /* Work-UpUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
+        ACC7EE64200F48CC00E55246 /* Work-Up WatchKit App */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = ACC7EE89200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit App" */;
+            buildPhases = (
+                ACC7EE63200F48CC00E55246 /* Resources */,
+                ACC7EE88200F48CC00E55246 /* Embed App Extensions */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                ACC7EE77200F48CC00E55246 /* PBXTargetDependency */,
+            );
+            name = "Work-Up WatchKit App";
+            productName = "Work-Up WatchKit App";
+            productReference = ACC7EE65200F48CC00E55246 /* Work-Up WatchKit App.app */;
+            productType = "com.apple.product-type.application.watchapp2";
+        };
+        ACC7EE73200F48CC00E55246 /* Work-Up WatchKit Extension */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = ACC7EE85200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit Extension" */;
+            buildPhases = (
+                ACC7EE70200F48CC00E55246 /* Sources */,
+                ACC7EE71200F48CC00E55246 /* Frameworks */,
+                ACC7EE72200F48CC00E55246 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "Work-Up WatchKit Extension";
+            productName = "Work-Up WatchKit Extension";
+            productReference = ACC7EE74200F48CC00E55246 /* Work-Up WatchKit Extension.appex */;
+            productType = "com.apple.product-type.watchkit2-extension";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ACC7EE35200F48CB00E55246 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = needpurple;
-				TargetAttributes = {
-					ACC7EE3C200F48CB00E55246 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					ACC7EE50200F48CC00E55246 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = ACC7EE3C200F48CB00E55246;
-					};
-					ACC7EE5B200F48CC00E55246 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = ACC7EE3C200F48CB00E55246;
-					};
-					ACC7EE64200F48CC00E55246 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					ACC7EE73200F48CC00E55246 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-				};
-			};
-			buildConfigurationList = ACC7EE38200F48CB00E55246 /* Build configuration list for PBXProject "Work-Up" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = ACC7EE34200F48CB00E55246;
-			productRefGroup = ACC7EE3E200F48CB00E55246 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				ACC7EE3C200F48CB00E55246 /* Work-Up */,
-				ACC7EE50200F48CC00E55246 /* Work-UpTests */,
-				ACC7EE5B200F48CC00E55246 /* Work-UpUITests */,
-				ACC7EE64200F48CC00E55246 /* Work-Up WatchKit App */,
-				ACC7EE73200F48CC00E55246 /* Work-Up WatchKit Extension */,
-			);
-		};
+        ACC7EE35200F48CB00E55246 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0920;
+                LastUpgradeCheck = 0920;
+                ORGANIZATIONNAME = needpurple;
+                TargetAttributes = {
+                    ACC7EE3C200F48CB00E55246 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        SystemCapabilities = {
+                            com.apple.ApplicationGroups.iOS = {
+                                enabled = 1;
+                            };
+                        };
+                    };
+                    ACC7EE50200F48CC00E55246 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = ACC7EE3C200F48CB00E55246;
+                    };
+                    ACC7EE5B200F48CC00E55246 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = ACC7EE3C200F48CB00E55246;
+                    };
+                    ACC7EE64200F48CC00E55246 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        SystemCapabilities = {
+                            com.apple.ApplicationGroups.iOS = {
+                                enabled = 1;
+                            };
+                        };
+                    };
+                    ACC7EE73200F48CC00E55246 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        SystemCapabilities = {
+                            com.apple.ApplicationGroups.iOS = {
+                                enabled = 1;
+                            };
+                        };
+                    };
+                };
+            };
+            buildConfigurationList = ACC7EE38200F48CB00E55246 /* Build configuration list for PBXProject "Work-Up" */;
+            compatibilityVersion = "Xcode 8.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = ACC7EE34200F48CB00E55246;
+            productRefGroup = ACC7EE3E200F48CB00E55246 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                ACC7EE3C200F48CB00E55246 /* Work-Up */,
+                ACC7EE50200F48CC00E55246 /* Work-UpTests */,
+                ACC7EE5B200F48CC00E55246 /* Work-UpUITests */,
+                ACC7EE64200F48CC00E55246 /* Work-Up WatchKit App */,
+                ACC7EE73200F48CC00E55246 /* Work-Up WatchKit Extension */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ACC7EE3B200F48CB00E55246 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC7EE4B200F48CB00E55246 /* LaunchScreen.storyboard in Resources */,
-				ACC7EE48200F48CB00E55246 /* Assets.xcassets in Resources */,
-				ACC7EE46200F48CB00E55246 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE4F200F48CC00E55246 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE5A200F48CC00E55246 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE63200F48CC00E55246 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC7EE6E200F48CC00E55246 /* Assets.xcassets in Resources */,
-				ACC7EE6C200F48CC00E55246 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE72200F48CC00E55246 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        ACC7EE3B200F48CB00E55246 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                ACC7EE4B200F48CB00E55246 /* LaunchScreen.storyboard in Resources */,
+                ACC7EE48200F48CB00E55246 /* Assets.xcassets in Resources */,
+                ACC7EE46200F48CB00E55246 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE4F200F48CC00E55246 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE5A200F48CC00E55246 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE63200F48CC00E55246 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                ACC7EE6E200F48CC00E55246 /* Assets.xcassets in Resources */,
+                ACC7EE6C200F48CC00E55246 /* Interface.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE72200F48CC00E55246 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                ACC7EE80200F48CC00E55246 /* Assets.xcassets in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ACC7EE39200F48CB00E55246 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */,
-				FE2466C0200F590900621F8B /* (null) in Sources */,
-				ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */,
-				ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */,
-				ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */,
-				ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE4D200F48CC00E55246 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC7EE56200F48CC00E55246 /* Work_UpTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE58200F48CC00E55246 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC7EE61200F48CC00E55246 /* Work_UpUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACC7EE70200F48CC00E55246 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */,
-				ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */,
-				AC700C6C2010BF6E0056C9D5 /* ExerciseInterfaceController.swift in Sources */,
-				ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */,
-				ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */,
-				AC700C6E2010C37A0056C9D5 /* TimerInterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        ACC7EE39200F48CB00E55246 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */,
+                FE2466C0200F590900621F8B /* (null) in Sources */,
+                ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */,
+                ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */,
+                ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */,
+                ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE4D200F48CC00E55246 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                ACC7EE56200F48CC00E55246 /* Work_UpTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE58200F48CC00E55246 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                ACC7EE61200F48CC00E55246 /* Work_UpUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ACC7EE70200F48CC00E55246 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */,
+                ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */,
+                AC700C6C2010BF6E0056C9D5 /* ExerciseInterfaceController.swift in Sources */,
+                ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */,
+                ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */,
+                AC700C6E2010C37A0056C9D5 /* TimerInterfaceController.swift in Sources */,
+                B39B52EC2010B53900C9C4E0 /* RestInterfaceController.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ACC7EE53200F48CC00E55246 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACC7EE3C200F48CB00E55246 /* Work-Up */;
-			targetProxy = ACC7EE52200F48CC00E55246 /* PBXContainerItemProxy */;
-		};
-		ACC7EE5E200F48CC00E55246 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACC7EE3C200F48CB00E55246 /* Work-Up */;
-			targetProxy = ACC7EE5D200F48CC00E55246 /* PBXContainerItemProxy */;
-		};
-		ACC7EE68200F48CC00E55246 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACC7EE64200F48CC00E55246 /* Work-Up WatchKit App */;
-			targetProxy = ACC7EE67200F48CC00E55246 /* PBXContainerItemProxy */;
-		};
-		ACC7EE77200F48CC00E55246 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACC7EE73200F48CC00E55246 /* Work-Up WatchKit Extension */;
-			targetProxy = ACC7EE76200F48CC00E55246 /* PBXContainerItemProxy */;
-		};
+        ACC7EE53200F48CC00E55246 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = ACC7EE3C200F48CB00E55246 /* Work-Up */;
+            targetProxy = ACC7EE52200F48CC00E55246 /* PBXContainerItemProxy */;
+        };
+        ACC7EE5E200F48CC00E55246 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = ACC7EE3C200F48CB00E55246 /* Work-Up */;
+            targetProxy = ACC7EE5D200F48CC00E55246 /* PBXContainerItemProxy */;
+        };
+        ACC7EE68200F48CC00E55246 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = ACC7EE64200F48CC00E55246 /* Work-Up WatchKit App */;
+            targetProxy = ACC7EE67200F48CC00E55246 /* PBXContainerItemProxy */;
+        };
+        ACC7EE77200F48CC00E55246 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = ACC7EE73200F48CC00E55246 /* Work-Up WatchKit Extension */;
+            targetProxy = ACC7EE76200F48CC00E55246 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ACC7EE44200F48CB00E55246 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACC7EE45200F48CB00E55246 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACC7EE4A200F48CB00E55246 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		ACC7EE6A200F48CC00E55246 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACC7EE6B200F48CC00E55246 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
+        ACC7EE44200F48CB00E55246 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                ACC7EE45200F48CB00E55246 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        ACC7EE49200F48CB00E55246 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                ACC7EE4A200F48CB00E55246 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
+        ACC7EE6A200F48CC00E55246 /* Interface.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                ACC7EE6B200F48CC00E55246 /* Base */,
+            );
+            name = Interface.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ACC7EE83200F48CC00E55246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		ACC7EE84200F48CC00E55246 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		ACC7EE86200F48CC00E55246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit Extension/Work-Up WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-Up WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
-			};
-			name = Debug;
-		};
-		ACC7EE87200F48CC00E55246 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit Extension/Work-Up WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-Up WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
-			};
-			name = Release;
-		};
-		ACC7EE8A200F48CC00E55246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit App/Work-Up WatchKit App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				IBSC_MODULE = Work_Up_WatchKit_Extension;
-				INFOPLIST_FILE = "Work-Up WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
-			};
-			name = Debug;
-		};
-		ACC7EE8B200F48CC00E55246 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit App/Work-Up WatchKit App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				IBSC_MODULE = Work_Up_WatchKit_Extension;
-				INFOPLIST_FILE = "Work-Up WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
-			};
-			name = Release;
-		};
-		ACC7EE8E200F48CC00E55246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Work-Up/Work-Up.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-Up/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ACC7EE8F200F48CC00E55246 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Work-Up/Work-Up.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-Up/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		ACC7EE91200F48CC00E55246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-UpTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Work-Up.app/Work-Up";
-			};
-			name = Debug;
-		};
-		ACC7EE92200F48CC00E55246 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-UpTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Work-Up.app/Work-Up";
-			};
-			name = Release;
-		};
-		ACC7EE94200F48CC00E55246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-UpUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Work-Up";
-			};
-			name = Debug;
-		};
-		ACC7EE95200F48CC00E55246 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6824YNJ23L;
-				INFOPLIST_FILE = "Work-UpUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Work-Up";
-			};
-			name = Release;
-		};
+        ACC7EE83200F48CC00E55246 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        ACC7EE84200F48CC00E55246 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        ACC7EE86200F48CC00E55246 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+                CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit Extension/Work-Up WatchKit Extension.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-Up WatchKit Extension/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp.watchkitextension";
+                PRODUCT_NAME = "${TARGET_NAME}";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 4.2;
+            };
+            name = Debug;
+        };
+        ACC7EE87200F48CC00E55246 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+                CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit Extension/Work-Up WatchKit Extension.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-Up WatchKit Extension/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp.watchkitextension";
+                PRODUCT_NAME = "${TARGET_NAME}";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 4.2;
+            };
+            name = Release;
+        };
+        ACC7EE8A200F48CC00E55246 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit App/Work-Up WatchKit App.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                IBSC_MODULE = Work_Up_WatchKit_Extension;
+                INFOPLIST_FILE = "Work-Up WatchKit App/Info.plist";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 4.2;
+            };
+            name = Debug;
+        };
+        ACC7EE8B200F48CC00E55246 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "Work-Up WatchKit App/Work-Up WatchKit App.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                IBSC_MODULE = Work_Up_WatchKit_Extension;
+                INFOPLIST_FILE = "Work-Up WatchKit App/Info.plist";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up.watchkitapp";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 4.2;
+            };
+            name = Release;
+        };
+        ACC7EE8E200F48CC00E55246 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "Work-Up/Work-Up.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-Up/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        ACC7EE8F200F48CC00E55246 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "Work-Up/Work-Up.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-Up/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-Up";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        ACC7EE91200F48CC00E55246 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-UpTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Work-Up.app/Work-Up";
+            };
+            name = Debug;
+        };
+        ACC7EE92200F48CC00E55246 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-UpTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Work-Up.app/Work-Up";
+            };
+            name = Release;
+        };
+        ACC7EE94200F48CC00E55246 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-UpUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = "Work-Up";
+            };
+            name = Debug;
+        };
+        ACC7EE95200F48CC00E55246 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = 6824YNJ23L;
+                INFOPLIST_FILE = "Work-UpUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "needpurple.Work-UpUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = "Work-Up";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACC7EE38200F48CB00E55246 /* Build configuration list for PBXProject "Work-Up" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACC7EE83200F48CC00E55246 /* Debug */,
-				ACC7EE84200F48CC00E55246 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACC7EE85200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACC7EE86200F48CC00E55246 /* Debug */,
-				ACC7EE87200F48CC00E55246 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACC7EE89200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACC7EE8A200F48CC00E55246 /* Debug */,
-				ACC7EE8B200F48CC00E55246 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACC7EE8D200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACC7EE8E200F48CC00E55246 /* Debug */,
-				ACC7EE8F200F48CC00E55246 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACC7EE90200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACC7EE91200F48CC00E55246 /* Debug */,
-				ACC7EE92200F48CC00E55246 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACC7EE93200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACC7EE94200F48CC00E55246 /* Debug */,
-				ACC7EE95200F48CC00E55246 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        ACC7EE38200F48CB00E55246 /* Build configuration list for PBXProject "Work-Up" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                ACC7EE83200F48CC00E55246 /* Debug */,
+                ACC7EE84200F48CC00E55246 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        ACC7EE85200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit Extension" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                ACC7EE86200F48CC00E55246 /* Debug */,
+                ACC7EE87200F48CC00E55246 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        ACC7EE89200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up WatchKit App" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                ACC7EE8A200F48CC00E55246 /* Debug */,
+                ACC7EE8B200F48CC00E55246 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        ACC7EE8D200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-Up" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                ACC7EE8E200F48CC00E55246 /* Debug */,
+                ACC7EE8F200F48CC00E55246 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        ACC7EE90200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                ACC7EE91200F48CC00E55246 /* Debug */,
+                ACC7EE92200F48CC00E55246 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        ACC7EE93200F48CC00E55246 /* Build configuration list for PBXNativeTarget "Work-UpUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                ACC7EE94200F48CC00E55246 /* Debug */,
+                ACC7EE95200F48CC00E55246 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */,
-			);
-			currentVersion = ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */;
-			path = WorkUp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */,
-			);
-			currentVersion = ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */;
-			path = WorkUp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		ACC7EEAB200F998B00E55246 /* WorkUp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */,
-			);
-			currentVersion = ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */;
-			path = WorkUp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
+        ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */ = {
+            isa = XCVersionGroup;
+            children = (
+                ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */,
+            );
+            currentVersion = ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */;
+            path = WorkUp.xcdatamodeld;
+            sourceTree = "<group>";
+            versionGroupType = wrapper.xcdatamodel;
+        };
+        ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */ = {
+            isa = XCVersionGroup;
+            children = (
+                ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */,
+            );
+            currentVersion = ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */;
+            path = WorkUp.xcdatamodeld;
+            sourceTree = "<group>";
+            versionGroupType = wrapper.xcdatamodel;
+        };
+        ACC7EEAB200F998B00E55246 /* WorkUp.xcdatamodeld */ = {
+            isa = XCVersionGroup;
+            children = (
+                ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */,
+            );
+            currentVersion = ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */;
+            path = WorkUp.xcdatamodeld;
+            sourceTree = "<group>";
+            versionGroupType = wrapper.xcdatamodel;
+        };
 /* End XCVersionGroup section */
-	};
-	rootObject = ACC7EE35200F48CB00E55246 /* Project object */;
+    };
+    rootObject = ACC7EE35200F48CB00E55246 /* Project object */;
 }
