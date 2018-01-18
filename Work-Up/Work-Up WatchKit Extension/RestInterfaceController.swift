@@ -32,24 +32,25 @@ class RestInterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        //barra rossa per le calorie bruciate
-        summary.activeEnergyBurned = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: value)
-        summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: goal)
-        
-        //barra verde per il timer e conteggio (utile per il recupero)
-        summary.appleExerciseTime = HKQuantity(unit: HKUnit.minute(), doubleValue: value)
-        summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.minute(), doubleValue: goal)
-        
-        //barra blu per il conteggio passi
-//        summary.appleStandHours = HKQuantity(unit: HKUnit.count(), doubleValue: value)
-//        summary.appleStandHoursGoal = HKQuantity(unit: HKUnit.count(), doubleValue: goal)
-        
-        
-        ringActivity.setActivitySummary(summary, animated: true)
-        // Configure interface objects here.
-        if(value == goal) {
-            WKInterfaceDevice().play(.notification)
-        }
+        updateRing()
+//        //barra rossa per le calorie bruciate
+//        summary.activeEnergyBurned = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: value)
+//        summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: goal)
+//
+//        //barra verde per il timer e conteggio (utile per il recupero)
+//        summary.appleExerciseTime = HKQuantity(unit: HKUnit.minute(), doubleValue: value)
+//        summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.minute(), doubleValue: goal)
+//
+//        //barra blu per il conteggio passi
+////        summary.appleStandHours = HKQuantity(unit: HKUnit.count(), doubleValue: value)
+////        summary.appleStandHoursGoal = HKQuantity(unit: HKUnit.count(), doubleValue: goal)
+//
+//
+//        ringActivity.setActivitySummary(summary, animated: true)
+//        // Configure interface objects here.
+//        if(value == goal) {
+//            WKInterfaceDevice().play(.notification)
+//        }
         
         
 
@@ -70,7 +71,7 @@ class RestInterfaceController: WKInterfaceController {
         value = value + 1
         
         //aggiorna il ring
-        awake(withContext: self)
+        updateRing()
         
         if count == 0 {
             //timer si disabilita
@@ -87,6 +88,26 @@ class RestInterfaceController: WKInterfaceController {
     }
     
     
+    func updateRing() {
+        //barra rossa per le calorie bruciate
+        summary.activeEnergyBurned = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: value)
+        summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: goal)
+        
+        //barra verde per il timer e conteggio (utile per il recupero)
+        summary.appleExerciseTime = HKQuantity(unit: HKUnit.minute(), doubleValue: value)
+        summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.minute(), doubleValue: goal)
+        
+        //barra blu per il conteggio passi
+        //        summary.appleStandHours = HKQuantity(unit: HKUnit.count(), doubleValue: value)
+        //        summary.appleStandHoursGoal = HKQuantity(unit: HKUnit.count(), doubleValue: goal)
+        
+        
+        ringActivity.setActivitySummary(summary, animated: true)
+        // Configure interface objects here.
+        if(value == goal) {
+            WKInterfaceDevice().play(.notification)
+        }
+    }
  
 
 }
