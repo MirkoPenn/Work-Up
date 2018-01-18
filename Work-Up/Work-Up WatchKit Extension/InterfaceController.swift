@@ -14,6 +14,7 @@ import CoreData
 
 class InterfaceController:  WKInterfaceController{
     
+    @IBOutlet var startButton: WKInterfaceButton!
     @IBOutlet var label: WKInterfaceLabel!
     
     var exercises: [Exercise] = []
@@ -69,6 +70,7 @@ class InterfaceController:  WKInterfaceController{
 //        }
 //
 //        label.setText(esercizi)
+        
         
         exercises = getAllExercises()
         
