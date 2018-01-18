@@ -50,7 +50,7 @@
                         <activity alignment="left" id="nfE-gY-I2y"/>
                     </items>
                     <connections>
-                        <outlet property="ringActivity" destination="nfE-gY-I2y" id="V7A-Sr-Lfj"/>
+                        <outlet property="ringActivity" destination="nfE-gY-I2y" id="gIB-Ne-bfF"/>
                     </connections>
                 </controller>
             </objects>
