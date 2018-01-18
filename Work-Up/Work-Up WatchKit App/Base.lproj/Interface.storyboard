@@ -17,7 +17,7 @@
                         <label width="1" height="44" alignment="center" text="Day" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.0" id="h3L-oW-hQr">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Button" id="MSu-7B-N5d"/>
+                        <button width="1" height="0.5" alignment="center" verticalAlignment="center" title="START" id="MSu-7B-N5d"/>
                     </items>
                     <connections>
                         <outlet property="label" destination="h3L-oW-hQr" id="xu4-mm-oZJ"/>
