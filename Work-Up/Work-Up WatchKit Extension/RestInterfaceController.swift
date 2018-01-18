@@ -18,8 +18,9 @@ class RestInterfaceController: WKInterfaceController {
   
     @IBOutlet var ringActivity: WKInterfaceActivityRing!
     let summary = HKActivitySummary()
-    let value: Double = 5
-    let goal: Double = 10
+    var value: Double = 0
+    //deve essere uguale al recupero
+    var goal: Double = 10
 //    var activeEnergyBurned: HKQuantity
 //    var activeEnergyBurnedGoal: HKQuantity
 //    var appleExerciseTime: HKQuantity
@@ -30,14 +31,19 @@ class RestInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
+        //barra rossa per le calorie bruciate
         summary.activeEnergyBurned = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: value)
         summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: goal)
         
+        //barra verde per il timer e conteggio (utile per il recupero)
         summary.appleExerciseTime = HKQuantity(unit: HKUnit.minute(), doubleValue: value)
         summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.minute(), doubleValue: goal)
         
-        summary.appleStandHours = HKQuantity(unit: HKUnit.count(), doubleValue: value)
-        summary.appleStandHoursGoal = HKQuantity(unit: HKUnit.count(), doubleValue: goal)
+        //barra blu per il conteggio passi
+//        summary.appleStandHours = HKQuantity(unit: HKUnit.count(), doubleValue: value)
+//        summary.appleStandHoursGoal = HKQuantity(unit: HKUnit.count(), doubleValue: goal)
+        
         
         ringActivity.setActivitySummary(summary, animated: true)
         // Configure interface objects here.
@@ -60,19 +66,20 @@ class RestInterfaceController: WKInterfaceController {
     
     @objc func countdown(sender: Timer) {
         
-        count -= 1
+        count = count - 1
+        value = value + 1
+        
+        //aggiorna il ring
+        awake(withContext: self)
         
         if count == 0 {
+            //timer si disabilita
             sender.invalidate()
             print("now the state is \(sender.isValid)")
         }
         
     }
     
-    func stopTimerTest() {
-        print("stopTimer")
-        timer.invalidate()
-    }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible

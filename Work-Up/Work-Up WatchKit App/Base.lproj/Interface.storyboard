@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RQG-1K-ZFc">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -119,7 +119,7 @@
             <objects>
                 <controller identifier="restProgress" title="Rest" id="RQG-1K-ZFc" customClass="RestInterfaceController" customModule="Work_Up_WatchKit_Extension">
                     <items>
-                        <activity alignment="left" id="nfE-gY-I2y"/>
+                        <activity alignment="center" verticalAlignment="center" id="nfE-gY-I2y"/>
                     </items>
                     <connections>
                         <outlet property="ringActivity" destination="nfE-gY-I2y" id="gIB-Ne-bfF"/>
