@@ -14,57 +14,77 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Work_Up_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="46" alignment="center" text="Today" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.0" id="h3L-oW-hQr">
-                            <fontDescription key="font" type="system" pointSize="23"/>
-                        </label>
-                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="start button" id="MSu-7B-N5d">
-                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="backgroundColor" red="0.77647058823529413" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="GCy-er-5c0" kind="push" id="Jmt-D6-Dzd"/>
-                            </connections>
-                        </button>
-                    </items>
-                    <connections>
-                        <outlet property="label" destination="h3L-oW-hQr" id="xu4-mm-oZJ"/>
-                        <outlet property="startButton" destination="MSu-7B-N5d" id="TX7-pz-b2m"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Exercise Interface Controller-->
-        <scene sceneID="hUc-AK-zHI">
-            <objects>
-                <controller id="GCy-er-5c0" customClass="ExerciseInterfaceController" customModule="Work_Up_WatchKit_Extension">
-                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="eyn-TJ-0nQ">
+                            <items>
+                                <label width="1" height="46" alignment="center" text="Today" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.0" id="h3L-oW-hQr" userLabel="dayLabel">
+                                    <fontDescription key="font" type="system" pointSize="23"/>
+                                </label>
+                                <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="start button" id="MSu-7B-N5d">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.77647058823529413" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="onClickStart" destination="AgC-eL-Hgc" id="gU7-pR-ffT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                         <group width="1" alignment="left" layout="vertical" id="0aT-P5-1b5">
                             <items>
-                                <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu">
+                                <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu" userLabel="Exercise">
                                     <fontDescription key="font" type="system" pointSize="20"/>
                                 </label>
-                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Chest" id="DXy-S2-2Bz"/>
-                                <label alignment="center" verticalAlignment="bottom" text="Tap when done" id="Xhs-SW-JMT"/>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Chest" id="DXy-S2-2Bz" userLabel="Category"/>
                                 <label alignment="center" verticalAlignment="bottom" text="1 of 4" id="Zoy-zo-r3B"/>
+                                <label alignment="center" verticalAlignment="bottom" alpha="0.5" text="Tap when done" id="Xhs-SW-JMT"/>
                             </items>
                             <gestureRecognizers>
                                 <tapGestureRecognizer id="xss-e5-vKg">
                                     <connections>
-                                        <action selector="handleGesture:" destination="GCy-er-5c0" id="Kj5-qK-ZC3"/>
+                                        <action selector="onTapExercise:" destination="AgC-eL-Hgc" id="Mno-bD-dAi"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="nc5-1a-K93" userLabel="Timer Group">
+                            <items>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="Timer" textAlignment="center" id="D7d-L6-X0P" userLabel="Timer"/>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="5kt-oc-Piv">
+                                    <connections>
+                                        <action selector="onTapTimer:" destination="AgC-eL-Hgc" id="DsV-e1-eEZ"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="jRy-Te-iI0" userLabel="Done Group">
+                            <items>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="Well done" textAlignment="center" id="JV7-T8-sAr" userLabel="Timer"/>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="cVN-Pq-QF3">
+                                    <connections>
+                                        <action selector="onTapTimer:" destination="AgC-eL-Hgc" id="b8G-cZ-VZa"/>
                                     </connections>
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="exerciseImage" destination="DXy-S2-2Bz" id="9YG-zp-juD"/>
-                        <outlet property="exerciseNameLabel" destination="F0W-ag-Kxu" id="ozm-Xm-ao5"/>
-                        <outlet property="exerciseSeriesLabel" destination="Zoy-zo-r3B" id="VK0-DH-g0Y"/>
-                        <outlet property="tapLabel" destination="Xhs-SW-JMT" id="cq1-zq-vAx"/>
+                        <outlet property="categoryImage" destination="DXy-S2-2Bz" id="ocO-qt-O09"/>
+                        <outlet property="dayLabel" destination="h3L-oW-hQr" id="xu4-mm-oZJ"/>
+                        <outlet property="doneGroup" destination="jRy-Te-iI0" id="RHD-Zo-NKr"/>
+                        <outlet property="exerciseGroup" destination="0aT-P5-1b5" id="IyL-fx-rbv"/>
+                        <outlet property="exerciseLabel" destination="F0W-ag-Kxu" id="LAY-Wo-41h"/>
+                        <outlet property="seriesLabel" destination="Zoy-zo-r3B" id="OLK-ly-z5i"/>
+                        <outlet property="startButton" destination="MSu-7B-N5d" id="TX7-pz-b2m"/>
+                        <outlet property="startGroup" destination="eyn-TJ-0nQ" id="i27-7T-wsN"/>
+                        <outlet property="tapLabel" destination="Xhs-SW-JMT" id="Ehk-zW-tTA"/>
+                        <outlet property="timerGroup" destination="nc5-1a-K93" id="jT3-1L-h2S"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="450.71794871794873" y="344.79487179487182"/>
+            <point key="canvasLocation" x="220" y="345"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="1bu-ws-dRi">

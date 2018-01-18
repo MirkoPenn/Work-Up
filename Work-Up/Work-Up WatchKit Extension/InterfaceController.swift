@@ -15,9 +15,20 @@ import CoreData
 class InterfaceController:  WKInterfaceController{
     
     @IBOutlet var startButton: WKInterfaceButton!
-    @IBOutlet var label: WKInterfaceLabel!
+    @IBOutlet var dayLabel: WKInterfaceLabel!
+    @IBOutlet var startGroup: WKInterfaceGroup!
+    @IBOutlet var exerciseGroup: WKInterfaceGroup!
+    @IBOutlet var timerGroup: WKInterfaceGroup!
+    @IBOutlet var doneGroup: WKInterfaceGroup!
+    
+    @IBOutlet var exerciseLabel: WKInterfaceLabel!
+    @IBOutlet var categoryImage: WKInterfaceImage!
+    @IBOutlet var seriesLabel: WKInterfaceLabel!
+    @IBOutlet var tapLabel: WKInterfaceLabel!
     
     var exercises: [Exercise] = []
+    var currentIndex: Int = 0
+    var currentSeries: Int = 1
     
     let coreDataContext : NSManagedObjectContext =
     {
@@ -71,18 +82,124 @@ class InterfaceController:  WKInterfaceController{
 //
 //        label.setText(esercizi)
         
+        startGroup.setHidden(false)
+        exerciseGroup.setAlpha(0.0)
+        exerciseGroup.setHidden(true)
+        timerGroup.setHidden(true)
+        doneGroup.setHidden(true)
         
-        exercises = getAllExercises()
         
-        label.setText(Date().dayOfWeek()!)
+        // set the start view
+        
+        setTitle("Work Up")
+        
+        dayLabel.setText(Date().dayOfWeek()!)
+        
+        // get the schedule
+        
+        exercises = getTodayExercises()
+        
+        print("n. of exercises for \(Date().dayOfWeek()!): \(exercises.count)")
+        
+        if (exercises.count==0){
+            // if there are no exercises today
+            startButton.setHidden(true)
+        } else {
+        
+        }
         
     }
     
-    func getAllExercises() -> [Exercise]{
+    @IBAction func onClickStart() {
         
-        // get all exercises from db and put them in "exercises"
+        // set up the exercise view
+        
+        startGroup.setHidden(true)
+        self.exerciseGroup.setHidden(false)
+        
+        self.animate(withDuration: 1.0, animations: {
+            self.exerciseGroup.setAlpha(1)
+            
+        })
+        
+        exerciseGroup.startAnimating()
+        
+        setTitle("Exercise")
+        
+        // set up the first exercise
+        
+        showExercise(index: currentIndex)
+        
+    }
+    
+    @IBAction func onTapExercise(_ sender: Any) {
+        
+        // set up the timer view
+        
+        exerciseGroup.setHidden(true)
+        timerGroup.setHidden(false)
+        
+        setTitle("Rest")
+        
+        // timer code
+        
+        
+        
+    }
+    
+    @IBAction func onTapTimer(_ sender: Any) {
+        
+        // set up the exercise view
+        
+        timerGroup.setHidden(true)
+        exerciseGroup.setHidden(false)
+        
+        setTitle("Exercise")
+        
+        // next series or exercise
+        
+        currentSeries = currentSeries + 1
+        
+        if (currentSeries<=exercises[currentIndex].series) {
+            // if it's not finished, update the series
+            seriesLabel.setText("\(currentSeries) of \(exercises[currentIndex].series)")
+            
+        } else {
+            // otherwise, check if there's another exercise
+            
+            if (currentIndex<(exercises.count-1)){
+                // if there are more exercises, show the next one
+                currentIndex = currentIndex + 1
+                currentSeries = 1
+                showExercise(index: currentIndex)
+                
+            } else {
+                // otherwise, show the well done view!
+                exerciseGroup.setHidden(true)
+                doneGroup.setHidden(false)
+                
+                setTitle("Finished")
+            }
+        }
+        
+    }
+    
+    func showExercise(index: Int){
+        
+        exerciseLabel.setText(exercises[currentIndex].name)
+        // set the category image here
+        categoryImage.setImage(UIImage(named: exercises[currentIndex].category!) ?? #imageLiteral(resourceName: "biceps"))
+        seriesLabel.setText("\(currentSeries) of \(exercises[currentIndex].series)")
+        
+    }
+    
+    
+    func getTodayExercises() -> [Exercise]{
+        
+        // get all exercises for today from db and put them in "exercises"
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+        fetchRequest.predicate = NSPredicate(format: "day == %@", Date().dayOfWeek()!)
         var results: [Exercise]
         
         do{
@@ -109,6 +226,7 @@ class InterfaceController:  WKInterfaceController{
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+
 
 }
 
