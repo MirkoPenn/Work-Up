@@ -18,7 +18,6 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
         
         //Swift
         do {
-            label.text = "scrivo"
             
             var identifiersAll: [String] = []
             var namesAll: [String] = []
@@ -46,7 +45,6 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
                 try session.updateApplicationContext(["identifiers" : identifiersAll, "names" : namesAll, "categories" : categoriesAll, "days" : daysAll, "weight" : weightsAll, "series" : seriesAll, "reps" : repsAll,  "restSeconds" : restSecondsAll])
         } catch {
             // Handle errors here
-            label.text = "noooo"
             
         }
     }
@@ -60,7 +58,6 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
     }
     
     
-    @IBOutlet weak var label: UILabel!
     var exercises: [Exercise] = []
     var days: [String] = []
     
