@@ -11,7 +11,16 @@ import CoreData
 import WatchKit
 import WatchConnectivity
 
-class AddExerciseViewController: UIViewController {
+class AddExerciseViewController: UIViewController, WCSessionDelegate {
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
 
     let context : NSManagedObjectContext =
     {
@@ -65,6 +74,43 @@ class AddExerciseViewController: UIViewController {
     @IBOutlet weak var repsTextField: UITextField!
     
     @IBOutlet weak var restTextField: UITextField!
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+        //Swift
+        do {
+            
+            let exercises = getAllExercises()
+            
+            var identifiersAll: [String] = []
+            var namesAll: [String] = []
+            var categoriesAll: [String] = []
+            var daysAll: [String] = []
+            var weightsAll: [Float] = []
+            var seriesAll: [Int] = []
+            var repsAll: [Int] = []
+            var restSecondsAll: [Int] = []
+            
+            for exercise in exercises {
+                
+                identifiersAll.append(exercise.identifier)
+                namesAll.append(exercise.name!)
+                categoriesAll.append(exercise.category!)
+                daysAll.append(exercise.day!)
+                weightsAll.append(exercise.weight)
+                seriesAll.append(exercise.series)
+                repsAll.append(exercise.reps)
+                restSecondsAll.append(exercise.restSeconds)
+                
+            }
+            
+            _ = // Create a dict of application data
+                try session.updateApplicationContext(["identifiers" : identifiersAll, "names" : namesAll, "categories" : categoriesAll, "days" : daysAll, "weight" : weightsAll, "series" : seriesAll, "reps" : repsAll,  "restSeconds" : restSecondsAll])
+        } catch {
+            // Handle errors here
+            
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +127,7 @@ class AddExerciseViewController: UIViewController {
     
     @IBAction func addExercise(_ sender: UIButton) {
         
-        var newExercise: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
+        let newExercise: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: context) as! Exercise
         
         newExercise.name = nameTextField.text
         newExercise.category = categoryTextField.text
@@ -91,7 +137,7 @@ class AddExerciseViewController: UIViewController {
         newExercise.reps = Int(repsTextField.text!)!
         newExercise.restSeconds = Int(restTextField.text!)!
         
-        saveContext()
+        _ = saveContext()
         
         self.navigationController?.popViewController(animated: true)
         
@@ -107,8 +153,10 @@ class AddExerciseViewController: UIViewController {
                 
                 // send updates to watch
                 let session = WCSession.default
-                session.delegate = self as? WCSessionDelegate
+                session.delegate = self as WCSessionDelegate
                 session.activate()
+                
+                print("hey")
                 
             } catch {
                 return false
@@ -117,6 +165,25 @@ class AddExerciseViewController: UIViewController {
         }
         return true
     }
+    
+    func getAllExercises() -> [Exercise]{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+        var results: [Exercise]
+        
+        do{
+            
+            results = try context.fetch(fetchRequest) as! [Exercise]
+            
+        } catch {
+            
+            results = []
+            
+        }
+        
+        return results
+    }
+    
     
     /*
     // MARK: - Navigation
