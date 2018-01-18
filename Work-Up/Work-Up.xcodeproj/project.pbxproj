@@ -24,6 +24,7 @@
 		ACC7EE9A200F4F2000E55246 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE99200F4F2000E55246 /* MainTableViewController.swift */; };
 		ACC7EEA4200F5CEB00E55246 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA3200F5CEB00E55246 /* Exercise.swift */; };
 		ACC7EEA7200F5ED500E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA5200F5ED500E55246 /* WorkUp.xcdatamodeld */; };
+		ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */; };
 		FE2466C0200F590900621F8B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		FE2466C5200F676700621F8B /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2466C4200F676700621F8B /* AddExerciseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -115,6 +116,8 @@
 		ACC7EEA0200F54BF00E55246 /* CoreDataSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwift.swift; sourceTree = "<group>"; };
 		ACC7EEA3200F5CEB00E55246 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+		ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
+		ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkUp.xcdatamodel; sourceTree = "<group>"; };
 		FE2466C4200F676700621F8B /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +220,7 @@
 				ACC7EE6A200F48CC00E55246 /* Interface.storyboard */,
 				ACC7EE6D200F48CC00E55246 /* Assets.xcassets */,
 				ACC7EE6F200F48CC00E55246 /* Info.plist */,
+				ACC7EEAB200F998B00E55246 /* WorkUp.xcdatamodeld */,
 			);
 			path = "Work-Up WatchKit App";
 			sourceTree = "<group>";
@@ -231,6 +235,7 @@
 				ACC7EE7F200F48CC00E55246 /* Assets.xcassets */,
 				ACC7EE81200F48CC00E55246 /* Info.plist */,
 				ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */,
+				ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */,
 			);
 			path = "Work-Up WatchKit Extension";
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */,
 				ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */,
 				ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */,
+				ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +890,26 @@
 				ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */,
 			);
 			currentVersion = ACC7EEA6200F5ED500E55246 /* WorkUp.xcdatamodel */;
+			path = WorkUp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */,
+			);
+			currentVersion = ACC7EEA9200F997700E55246 /* WorkUp.xcdatamodel */;
+			path = WorkUp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		ACC7EEAB200F998B00E55246 /* WorkUp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */,
+			);
+			currentVersion = ACC7EEAC200F998B00E55246 /* WorkUp.xcdatamodel */;
 			path = WorkUp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

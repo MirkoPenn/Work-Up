@@ -20,7 +20,10 @@ class AddExerciseViewController: UIViewController {
         let dataModel = NSManagedObjectModel(contentsOf: modelURL!)
         
         // This is where you are storing your SQLite database file
-        let documentsDirectory : NSURL! = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last as NSURL?
+        
+        
+        let documentsDirectory : NSURL! = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.needpurple.work-up")! as NSURL
+        
         let storeURL = documentsDirectory.appendingPathComponent("WorkUp.sqlite")
         
         let psc = NSPersistentStoreCoordinator(managedObjectModel: dataModel!)

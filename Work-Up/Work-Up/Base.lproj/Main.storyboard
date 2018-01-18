@@ -34,9 +34,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EDD-ha-VWQ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" textLabel="Puh-1J-uoU" detailTextLabel="hnH-ty-OAM" style="IBUITableViewCellStyleSubtitle" id="FVd-dN-RxA">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FVd-dN-RxA" id="cej-Nh-0jj">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -67,6 +74,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Workout" id="oiy-fT-ov2"/>
                     <connections>
+                        <outlet property="label" destination="EDD-ha-VWQ" id="FDx-0d-cNQ"/>
                         <segue destination="mAY-xe-zTn" kind="show" identifier="addSegue" id="ynm-1I-Jf2"/>
                     </connections>
                 </tableViewController>

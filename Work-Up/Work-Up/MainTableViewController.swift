@@ -8,11 +8,59 @@
 
 import UIKit
 import CoreData
+import WatchKit
+import WatchConnectivity
 
 
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+        //Swift
+        do {
+            label.text = "scrivo"
+            
+            var identifiersAll: [String] = []
+            var namesAll: [String] = []
+            var categoriesAll: [String] = []
+            var daysAll: [String] = []
+            var weightsAll: [Float] = []
+            var seriesAll: [Int] = []
+            var repsAll: [Int] = []
+            var restSecondsAll: [Int] = []
+            
+            for exercise in exercises {
+                
+            identifiersAll.append(exercise.identifier)
+            namesAll.append(exercise.name!)
+            categoriesAll.append(exercise.category!)
+            daysAll.append(exercise.day!)
+            weightsAll.append(exercise.weight)
+            seriesAll.append(exercise.series)
+            repsAll.append(exercise.reps)
+            restSecondsAll.append(exercise.restSeconds)
+                
+            }
+            
+            let applicationDict = // Create a dict of application data
+                try session.updateApplicationContext(["identifiers" : identifiersAll, "names" : namesAll, "categories" : categoriesAll, "days" : daysAll, "weight" : weightsAll, "series" : seriesAll, "reps" : repsAll,  "restSeconds" : restSecondsAll])
+        } catch {
+            // Handle errors here
+            label.text = "noooo"
+            
+        }
+    }
     
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    
+    @IBOutlet weak var label: UILabel!
     var exercises: [Exercise] = []
     var days: [String] = []
     
@@ -25,7 +73,9 @@ class MainTableViewController: UITableViewController {
         let dataModel = NSManagedObjectModel(contentsOf: modelURL!)
         
         // This is where you are storing your SQLite database file
-        let documentsDirectory : NSURL! = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last as NSURL?
+
+        let documentsDirectory : NSURL! =
+        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.needpurple.work-up")! as NSURL
         let storeURL = documentsDirectory.appendingPathComponent("WorkUp.sqlite")
         
         let psc = NSPersistentStoreCoordinator(managedObjectModel: dataModel!)
@@ -38,6 +88,8 @@ class MainTableViewController: UITableViewController {
             {
                 print("Uhoh, something happened! \(error), \(error.userInfo)")
             }
+            
+            try psc.migratePersistentStore(store, to: storeURL!, options: nil, withType: NSSQLiteStoreType)
             
         } catch {
             
@@ -60,6 +112,12 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
     
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
+        
+        let session = WCSession.default
+        session.delegate = self as? WCSessionDelegate
+        session.activate()
+        
+
         
     }
     
@@ -100,6 +158,7 @@ class MainTableViewController: UITableViewController {
             }
             
         }
+        
         return true
     }
 
