@@ -110,12 +110,51 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
     
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
         
+        tableView.allowsMultipleSelectionDuringEditing = false
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
         exercises = getAllExercises()
         tableView.reloadData()
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            
+            let id = tableView.cellForRow(at: indexPath)?.accessibilityIdentifier
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+            fetchRequest.predicate = NSPredicate(format: "identifier == %@", id!)
+            var results: [Exercise]
+            
+            do{
+                
+                results = try context.fetch(fetchRequest) as! [Exercise]
+                
+                for result in results {
+                    context.delete(result)
+                }
+                
+                
+            } catch {
+                
+            }
+            
+            _ = saveContext()
+            
+            exercises = getAllExercises()
+            
+            tableView.reloadData()
+            
+        }
         
     }
     
@@ -169,6 +208,8 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
        
+        days = []
+        
         for exercise in exercises {
             if (!days.contains(exercise.day!)){
                 days.append(exercise.day!)
@@ -223,6 +264,8 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
         
         cell.detailTextLabel?.text =  "\(exercisesForDay[indexPath.row].category!), \(exercisesForDay[indexPath.row].series)x\(exercisesForDay[indexPath.row].reps) (\(exercisesForDay[indexPath.row].weight) kg)"
 
+        cell.accessibilityIdentifier =  exercisesForDay[indexPath.row].identifier
+        
         return cell
     }
     
