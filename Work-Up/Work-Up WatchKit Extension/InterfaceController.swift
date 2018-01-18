@@ -74,11 +74,38 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate{
         
         // Configure interface objects here.
        
-        if(exercises.count != 0){
-            print("Found \(exercises.count) exercises")
+        exercises = getAllExercises()
+        
+        var esercizi: String = ""
+        
+        for exercise in exercises {
+            esercizi.append(exercise.name!)
         }
         
+        label.setText(esercizi)
+        
+        
     }
+    
+    
+    func getAllExercises() -> [Exercise]{
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Exercise")
+        var results: [Exercise]
+        
+        do{
+            
+            results = try coreDataContext.fetch(fetchRequest) as! [Exercise]
+            
+        } catch {
+            
+            results = []
+            
+        }
+        
+        return results
+    }
+    
     func saveContext() -> Bool
     {
         if coreDataContext.hasChanges
@@ -118,7 +145,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate{
         
         var newExercises: [Exercise] = []
         
-        for i in 0...identifiers.count-1 {
+        for i in 0...(identifiers.count-1) {
             
             var newExercise: Exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: coreDataContext) as! Exercise
             newExercise.identifier = identifiers[i]
@@ -133,8 +160,6 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate{
             newExercises.append(newExercise)
             
         }
-        
-        exercises = newExercises
     
         saveContext()
         

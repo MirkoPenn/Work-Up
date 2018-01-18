@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import WatchKit
+import WatchConnectivity
 
 class AddExerciseViewController: UIViewController {
 
@@ -102,6 +104,12 @@ class AddExerciseViewController: UIViewController {
         {
             do {
                 try context.save()
+                
+                // send updates to watch
+                let session = WCSession.default
+                session.delegate = self as? WCSessionDelegate
+                session.activate()
+                
             } catch {
                 return false
             }

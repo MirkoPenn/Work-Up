@@ -113,12 +113,6 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
     
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addExercise(sender:)))
         
-        let session = WCSession.default
-        session.delegate = self as? WCSessionDelegate
-        session.activate()
-        
-
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -152,7 +146,14 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
         if context.hasChanges
         {
             do {
+                
             try context.save()
+                
+            // send updates to watch 
+            let session = WCSession.default
+            session.delegate = self as WCSessionDelegate
+            session.activate()
+                
             } catch {
                 return false
             }
