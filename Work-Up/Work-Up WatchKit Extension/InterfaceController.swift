@@ -88,7 +88,6 @@ class InterfaceController:  WKInterfaceController{
         timerGroup.setHidden(true)
         doneGroup.setHidden(true)
         
-        
         // set the start view
         
         setTitle("Work Up")

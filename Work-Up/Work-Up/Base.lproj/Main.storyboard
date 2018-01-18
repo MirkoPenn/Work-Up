@@ -192,6 +192,11 @@
                                     <action selector="addExercise:" destination="mAY-xe-zTn" eventType="touchUpInside" id="BvE-Nd-wSk"/>
                                 </connections>
                             </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZY1-7E-twl">
+                                <rect key="frame" x="0.0" y="439" width="375" height="228"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MBA-rZ-oU0"/>
@@ -200,6 +205,7 @@
                         <outlet property="categoryTextField" destination="oxp-gO-UCV" id="qHs-Bu-Xqk"/>
                         <outlet property="dayTextField" destination="Xb8-rA-pnA" id="LrY-zP-o7V"/>
                         <outlet property="nameTextField" destination="FN5-xl-qdN" id="JFu-MJ-haG"/>
+                        <outlet property="pickerView" destination="ZY1-7E-twl" id="a8y-aQ-5NH"/>
                         <outlet property="repsTextField" destination="YTj-Yp-ZEG" id="ZqU-DE-JKy"/>
                         <outlet property="restTextField" destination="pQX-mB-u1j" id="QgU-t7-rrm"/>
                         <outlet property="seriesTextField" destination="YYj-6o-bEa" id="07L-Ga-OEk"/>
@@ -208,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYJ-ch-tEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1310" y="118"/>
+            <point key="canvasLocation" x="1309.5999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

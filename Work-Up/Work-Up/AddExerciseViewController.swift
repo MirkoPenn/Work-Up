@@ -11,15 +11,8 @@ import CoreData
 import WatchKit
 import WatchConnectivity
 
-class AddExerciseViewController: UIViewController, WCSessionDelegate {
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
+class AddExerciseViewController: UIViewController, WCSessionDelegate, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+
     
 
     let context : NSManagedObjectContext =
@@ -75,6 +68,25 @@ class AddExerciseViewController: UIViewController, WCSessionDelegate {
     
     @IBOutlet weak var restTextField: UITextField!
     
+    @IBOutlet weak var pickerView: UIPickerView!
+    
+    var selectedTextField: UITextField = UITextField()
+    
+    var days: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    var categories: [String] = ["Abs", "Back", "Biceps", "Chest", "Legs", "Shoulders", "Triceps"]
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
         //Swift
@@ -115,6 +127,10 @@ class AddExerciseViewController: UIViewController, WCSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.categoryTextField.delegate = self
+        self.dayTextField.delegate = self
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -123,6 +139,68 @@ class AddExerciseViewController: UIViewController, WCSessionDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        self.selectedTextField = textField
+        
+        if (selectedTextField == categoryTextField) {
+            
+            pickerView.isHidden = false
+            pickerView.reloadAllComponents()
+            
+            
+        } else if (selectedTextField == dayTextField) {
+            
+            pickerView.isHidden = false
+            pickerView.reloadAllComponents()
+            
+            
+        }
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        if (selectedTextField == categoryTextField) {
+            
+            return categories.count
+            
+        } else if (selectedTextField == dayTextField) {
+            
+            return days.count
+        }
+        
+        return 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        if (selectedTextField == categoryTextField) {
+            
+            return categories[row]
+            
+        } else if (selectedTextField == dayTextField) {
+            
+            return days[row]
+        }
+        
+        return ""
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        if (self.selectedTextField == categoryTextField) {
+            
+            selectedTextField.text = categories[row]
+            
+        } else if (self.selectedTextField == dayTextField) {
+            
+            selectedTextField.text = days[row]
+        }
+        
+        pickerView.isHidden = true
+        
+    }
     
     
     @IBAction func addExercise(_ sender: UIButton) {

@@ -47,7 +47,7 @@
                         </group>
                         <group width="1" alignment="left" layout="vertical" id="nc5-1a-K93" userLabel="Timer Group">
                             <items>
-                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="Timer" textAlignment="center" id="D7d-L6-X0P" userLabel="Timer"/>
+                                <activity alignment="left" id="WjE-Gt-Ffr"/>
                             </items>
                             <gestureRecognizers>
                                 <tapGestureRecognizer id="5kt-oc-Piv">
@@ -76,6 +76,7 @@
                         <outlet property="doneGroup" destination="jRy-Te-iI0" id="RHD-Zo-NKr"/>
                         <outlet property="exerciseGroup" destination="0aT-P5-1b5" id="IyL-fx-rbv"/>
                         <outlet property="exerciseLabel" destination="F0W-ag-Kxu" id="LAY-Wo-41h"/>
+                        <outlet property="ringActivity" destination="WjE-Gt-Ffr" id="7OV-y1-Px1"/>
                         <outlet property="seriesLabel" destination="Zoy-zo-r3B" id="OLK-ly-z5i"/>
                         <outlet property="startButton" destination="MSu-7B-N5d" id="TX7-pz-b2m"/>
                         <outlet property="startGroup" destination="eyn-TJ-0nQ" id="i27-7T-wsN"/>
@@ -125,7 +126,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-154" y="229"/>
+            <point key="canvasLocation" x="-36" y="285"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
