@@ -41,7 +41,7 @@ class MainTableViewController: UITableViewController, WCSessionDelegate {
                 
             }
             
-            let applicationDict = // Create a dict of application data
+            _ = // Create a dict of application data
                 try session.updateApplicationContext(["identifiers" : identifiersAll, "names" : namesAll, "categories" : categoriesAll, "days" : daysAll, "weight" : weightsAll, "series" : seriesAll, "reps" : repsAll,  "restSeconds" : restSecondsAll])
         } catch {
             // Handle errors here
