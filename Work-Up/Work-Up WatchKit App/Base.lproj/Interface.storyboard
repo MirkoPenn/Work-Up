@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,6 +25,22 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="hUc-AK-zHI">
+            <objects>
+                <controller id="GCy-er-5c0">
+                    <items>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Chest" id="DXy-S2-2Bz"/>
+                        <label alignment="center" verticalAlignment="bottom" text="1 of 4" id="Zoy-zo-r3B"/>
+                        <label alignment="center" verticalAlignment="bottom" text="Tap when done" id="Xhs-SW-JMT"/>
+                        <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="450.71794871794873" y="344.79487179487182"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
