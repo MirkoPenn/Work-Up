@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC700C6C2010BF6E0056C9D5 /* ExerciseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */; };
+		AC700C6E2010C37A0056C9D5 /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */; };
 		ACC7EE41200F48CB00E55246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EE40200F48CB00E55246 /* AppDelegate.swift */; };
 		ACC7EE46200F48CB00E55246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE44200F48CB00E55246 /* Main.storyboard */; };
 		ACC7EE48200F48CB00E55246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7EE47200F48CB00E55246 /* Assets.xcassets */; };
@@ -86,6 +88,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInterfaceController.swift; sourceTree = "<group>"; };
+		AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
 		ACC7EE3D200F48CB00E55246 /* Work-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Work-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC7EE40200F48CB00E55246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC7EE45200F48CB00E55246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				ACC7EE81200F48CC00E55246 /* Info.plist */,
 				ACC7EE82200F48CC00E55246 /* PushNotificationPayload.apns */,
 				ACC7EEA8200F997700E55246 /* WorkUp.xcdatamodeld */,
+				AC700C6B2010BF6E0056C9D5 /* ExerciseInterfaceController.swift */,
+				AC700C6D2010C37A0056C9D5 /* TimerInterfaceController.swift */,
 			);
 			path = "Work-Up WatchKit Extension";
 			sourceTree = "<group>";
@@ -483,8 +489,10 @@
 			files = (
 				ACC7EE7E200F48CC00E55246 /* NotificationController.swift in Sources */,
 				ACC7EE7C200F48CC00E55246 /* ExtensionDelegate.swift in Sources */,
+				AC700C6C2010BF6E0056C9D5 /* ExerciseInterfaceController.swift in Sources */,
 				ACC7EE7A200F48CC00E55246 /* InterfaceController.swift in Sources */,
 				ACC7EEAA200F997700E55246 /* WorkUp.xcdatamodeld in Sources */,
+				AC700C6E2010C37A0056C9D5 /* TimerInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

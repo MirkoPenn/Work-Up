@@ -20,6 +20,9 @@
                         <button width="0.59999999999999998" height="0.5" alignment="center" verticalAlignment="center" title="START" id="MSu-7B-N5d">
                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="backgroundColor" red="0.77647058823529413" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="GCy-er-5c0" kind="push" id="Jmt-D6-Dzd"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
@@ -29,21 +32,49 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Exercise Interface Controller-->
         <scene sceneID="hUc-AK-zHI">
             <objects>
-                <controller id="GCy-er-5c0">
+                <controller id="GCy-er-5c0" customClass="ExerciseInterfaceController" customModule="Work_Up_WatchKit_Extension">
                     <items>
-                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Chest" id="DXy-S2-2Bz"/>
-                        <label alignment="center" verticalAlignment="bottom" text="1 of 4" id="Zoy-zo-r3B"/>
-                        <label alignment="center" verticalAlignment="bottom" text="Tap when done" id="Xhs-SW-JMT"/>
-                        <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu">
-                            <fontDescription key="font" type="system" pointSize="20"/>
-                        </label>
+                        <group width="1" alignment="left" layout="vertical" id="0aT-P5-1b5">
+                            <items>
+                                <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Chest" id="DXy-S2-2Bz"/>
+                                <label alignment="center" verticalAlignment="bottom" text="Tap when done" id="Xhs-SW-JMT"/>
+                                <label alignment="center" verticalAlignment="bottom" text="1 of 4" id="Zoy-zo-r3B"/>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="xss-e5-vKg">
+                                    <connections>
+                                        <action selector="handleGesture:" destination="GCy-er-5c0" id="Kj5-qK-ZC3"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="exerciseImage" destination="DXy-S2-2Bz" id="9YG-zp-juD"/>
+                        <outlet property="exerciseNameLabel" destination="F0W-ag-Kxu" id="ozm-Xm-ao5"/>
+                        <outlet property="exerciseSeriesLabel" destination="Zoy-zo-r3B" id="VK0-DH-g0Y"/>
+                        <outlet property="tapLabel" destination="Xhs-SW-JMT" id="cq1-zq-vAx"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="450.71794871794873" y="344.79487179487182"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="1bu-ws-dRi">
+            <objects>
+                <controller id="2Nd-d2-Dk1">
+                    <items>
+                        <label height="20" alignment="left" text="Timer" id="Zp8-Ue-vTl"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="684.35897435897436" y="344.79487179487182"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -59,14 +90,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="864"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Work_Up_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="466" y="864"/>
         </scene>
     </scenes>
 </document>
