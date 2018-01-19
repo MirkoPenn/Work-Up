@@ -27,6 +27,8 @@ class InterfaceController:  WKInterfaceController{
     @IBOutlet var seriesLabel: WKInterfaceLabel!
     @IBOutlet var tapLabel: WKInterfaceLabel!
     
+    @IBOutlet var timerLabel: WKInterfaceLabel!
+    
     var exercises: [Exercise] = []
     var currentIndex: Int = 0
     var currentSeries: Int = 1
@@ -158,10 +160,11 @@ class InterfaceController:  WKInterfaceController{
         
         goal = Double(exercises[currentIndex].restSeconds)
         count = goal
-        updateRing()
+        
+        updateTime()
         
         //setta il timer
-        let clock = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countdown(sender:)), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countdown(sender:)), userInfo: nil, repeats: true)
         
         
     }
@@ -173,8 +176,9 @@ class InterfaceController:  WKInterfaceController{
         value = 0
         goal = Double(exercises[currentIndex].restSeconds)
         count = goal
+        
         //restart ring view
-        updateRing()
+        updateTime()
         
         // set up the exercise view
         
@@ -251,7 +255,7 @@ class InterfaceController:  WKInterfaceController{
         value = value + 1
         
         //aggiorna il ring
-        updateRing()
+        updateTime()
         
         if count == 0 {
             //timer si disabilita
@@ -264,26 +268,35 @@ class InterfaceController:  WKInterfaceController{
         
     }
     
-    func updateRing() {
+    func updateTime() {
+        
         //barra rossa per le calorie bruciate
-        summary.activeEnergyBurned = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: value)
-        summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: goal)
+//        summary.activeEnergyBurned = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: value)
+//        summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: goal)
         
         //barra verde per il timer e conteggio (utile per il recupero)
-        summary.appleExerciseTime = HKQuantity(unit: HKUnit.minute(), doubleValue: value)
-        summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.minute(), doubleValue: goal)
+//        summary.appleExerciseTime = HKQuantity(unit: HKUnit.minute(), doubleValue: value)
+//        summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.minute(), doubleValue: goal)
         
         //barra blu per il conteggio passi
         //        summary.appleStandHours = HKQuantity(unit: HKUnit.count(), doubleValue: value)
         //        summary.appleStandHoursGoal = HKQuantity(unit: HKUnit.count(), doubleValue: goal)
         
         
-        ringActivity.setActivitySummary(summary, animated: true)
+//        ringActivity.setActivitySummary(summary, animated: true)
+        
+        
         // Configure interface objects here.
         if(value == goal) {
-            WKInterfaceDevice().play(.notification)
+        WKInterfaceDevice().play(.notification)
             timer = Timer()
         }
+        
+        let minutes = Int(count) / 60 % 60
+        let seconds = Int(count) % 60
+       
+        
+        timerLabel.setText(String(format: "%02i:%02i", minutes, seconds))
         
         print(value)
         print(count)

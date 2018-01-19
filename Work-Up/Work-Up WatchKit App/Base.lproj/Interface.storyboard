@@ -28,7 +28,7 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" layout="vertical" id="0aT-P5-1b5">
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="0aT-P5-1b5">
                             <items>
                                 <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu" userLabel="Exercise">
                                     <fontDescription key="font" type="system" pointSize="20"/>
@@ -45,9 +45,12 @@
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
                         </group>
-                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="nc5-1a-K93" userLabel="Timer Group">
+                        <group width="1" alignment="left" layout="vertical" id="nc5-1a-K93" userLabel="Timer Group">
                             <items>
-                                <activity alignment="left" id="WjE-Gt-Ffr"/>
+                                <activity alignment="left" hidden="YES" id="WjE-Gt-Ffr"/>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="Timer" textAlignment="center" id="xna-qj-ige">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
                             </items>
                             <gestureRecognizers>
                                 <tapGestureRecognizer id="5kt-oc-Piv">
@@ -82,6 +85,7 @@
                         <outlet property="startGroup" destination="eyn-TJ-0nQ" id="i27-7T-wsN"/>
                         <outlet property="tapLabel" destination="Xhs-SW-JMT" id="Ehk-zW-tTA"/>
                         <outlet property="timerGroup" destination="nc5-1a-K93" id="jT3-1L-h2S"/>
+                        <outlet property="timerLabel" destination="xna-qj-ige" id="pqd-XC-zcd"/>
                         <segue destination="K63-y9-abn" kind="relationship" relationship="nextPage" id="YY6-0S-r0O"/>
                     </connections>
                 </controller>
