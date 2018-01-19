@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Work_Up_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="eyn-TJ-0nQ">
+                        <group width="1" height="1" alignment="left" hidden="YES" layout="vertical" id="eyn-TJ-0nQ">
                             <items>
                                 <label width="1" height="46" alignment="center" text="Today" textAlignment="center" numberOfLines="5" minimumScaleFactor="0.0" id="h3L-oW-hQr" userLabel="dayLabel">
                                     <fontDescription key="font" type="system" pointSize="23"/>
@@ -33,9 +33,9 @@
                                 <label alignment="center" text="Chest Fly" id="F0W-ag-Kxu" userLabel="Exercise">
                                     <fontDescription key="font" type="system" pointSize="20"/>
                                 </label>
-                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="Chest" id="DXy-S2-2Bz" userLabel="Category"/>
-                                <label alignment="center" verticalAlignment="bottom" text="1 of 4" id="Zoy-zo-r3B"/>
-                                <label alignment="center" verticalAlignment="bottom" alpha="0.5" text="Tap when done" id="Xhs-SW-JMT"/>
+                                <imageView width="93" height="88" alignment="center" verticalAlignment="center" image="Legs" contentMode="scaleAspectFit" id="DXy-S2-2Bz" userLabel="Category"/>
+                                <label height="15" alignment="center" verticalAlignment="bottom" text="1 of 4" id="Zoy-zo-r3B"/>
+                                <label height="16" alignment="center" verticalAlignment="bottom" alpha="0.5" text="Tap when done" id="Xhs-SW-JMT"/>
                             </items>
                             <gestureRecognizers>
                                 <tapGestureRecognizer id="xss-e5-vKg">
@@ -45,7 +45,7 @@
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
                         </group>
-                        <group width="1" alignment="left" layout="vertical" id="nc5-1a-K93" userLabel="Timer Group">
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="nc5-1a-K93" userLabel="Timer Group">
                             <items>
                                 <activity alignment="left" id="WjE-Gt-Ffr"/>
                             </items>
@@ -57,7 +57,7 @@
                                 </tapGestureRecognizer>
                             </gestureRecognizers>
                         </group>
-                        <group width="1" alignment="left" layout="vertical" id="jRy-Te-iI0" userLabel="Done Group">
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="jRy-Te-iI0" userLabel="Done Group">
                             <items>
                                 <label width="1" height="1" alignment="center" verticalAlignment="center" text="Well done" textAlignment="center" id="JV7-T8-sAr" userLabel="Timer"/>
                             </items>
@@ -82,10 +82,18 @@
                         <outlet property="startGroup" destination="eyn-TJ-0nQ" id="i27-7T-wsN"/>
                         <outlet property="tapLabel" destination="Xhs-SW-JMT" id="Ehk-zW-tTA"/>
                         <outlet property="timerGroup" destination="nc5-1a-K93" id="jT3-1L-h2S"/>
+                        <segue destination="K63-y9-abn" kind="relationship" relationship="nextPage" id="YY6-0S-r0O"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="343.92307692307696"/>
+        </scene>
+        <!--Progress-->
+        <scene sceneID="Sdo-Uj-hWD">
+            <objects>
+                <controller title="Progress" id="K63-y9-abn"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="268"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="1bu-ws-dRi">
@@ -96,7 +104,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="684.35897435897436" y="344.79487179487182"/>
+            <point key="canvasLocation" x="937" y="54"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -126,7 +134,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="684" y="54"/>
+            <point key="canvasLocation" x="936" y="319"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">

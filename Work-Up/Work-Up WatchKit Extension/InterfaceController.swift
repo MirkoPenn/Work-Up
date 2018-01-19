@@ -121,9 +121,6 @@ class InterfaceController:  WKInterfaceController{
         }
         
         // set timer for rest
-        goal = Double(exercises[currentIndex].restSeconds)
-        count = goal
-        updateRing()
         
     }
     
@@ -157,6 +154,11 @@ class InterfaceController:  WKInterfaceController{
         timerGroup.setHidden(false)
         
         setTitle("Rest")
+        
+        
+        goal = Double(exercises[currentIndex].restSeconds)
+        count = goal
+        updateRing()
         
         //setta il timer
         let clock = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countdown(sender:)), userInfo: nil, repeats: true)
